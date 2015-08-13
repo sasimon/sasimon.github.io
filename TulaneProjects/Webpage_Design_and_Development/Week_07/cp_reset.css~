@@ -1,0 +1,36 @@
+/*
+   HTML and CSS 6th Edition: Comprehensive
+   Author: Stuart Simon 
+   Date: 06/30/2015   
+
+   Filename:         cp_reset.css
+   Supporting Files: none
+
+
+   Text editor: jEdit, http://www.jedit.org/
+*/
+
+/* Display HTML5 structural elements as blocks (HTML 227) (hgroup omitted in element list because it is deprecated by W3C) */
+article, aside, figure, figcaption, footer, header, section, nav {
+	display: block;
+}
+
+/* Set the default page element styles (HTML 228) */
+
+body * {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	font-weight: inherit;
+	line-height: 1.2em;
+	list-style: none;
+	vertical-align: baseline;
+	/* No-margin style rule (HTML 254) */
+	margin: 0px;
+	padding: 0px; /* no-padding style rule (HTML 256) */
+}
+
+/* Temporarily hide the page sections (HTML 229) */
+
+/*nav.horizontalNAV, #president, nav.verticalNAV,  #story, */header, aside, footer {
+	display: none;
+}

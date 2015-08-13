@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- 
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 06/02/2015
+Text Editor:  jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the 
+	primary language (en = English) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>CAMshots Home Page</title> 
+  <!--  charset attribute specifies the character encoding for 
+    	the HTML document (utf-8 = Unicode) 
+    	see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- HTML 123: To add metadata to Gerry's document --> 
+  <!-- According to the tutorial, the metadata should go here. The template continues below it --> 
+  <meta name="author" content="Stuart Simon" /> 
+  <meta name="description" content="A site for sharing information on digital photography and cameras" /> 
+  <meta name="keywords" content="photography, cameras, digital imaging" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <!--  Rubric item #2: I notice the difference when applying the stylesheet. Although your "preimage' website had the below stylesheet already linked, it is apparent that you moved yours to "../cpst.css" (i.e., the file named "cpst.css" in the parent directory of the directory of "home.htm"). Yet you do not expect there to be a file named "cpst.css" on our server folders, as the Web site already looks like your after-image.--> 
+  <link href="camstyles.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body>
+  <header> 
+   <!-- HTML 108: To apply the logomap image map, step 1 --> 
+   <img src="camshots.jpg" alt="CAMshots" usemap="#logomap" /> 
+   <!-- HTML 107: To create an image map, step 2: in accordance with W3C, I removed spaces from coordinates --> 
+   <map name="logomap"> 
+    <!-- Step 3 --> <area shape="circle" coords="82,82,80" href="home.htm" alt="Home Page" /> 
+    <!-- Step 4 --> <area shape="rect" coords="235,120,310,150" href="tips.htm" alt="Tips" /> <area shape="rect" coords="340,120,510,150" href="glossary.htm" alt="Glossary" /> </map> 
+  </header> 
+  <!-- HTML 79: To create the navigation list, step 2 --> 
+  <nav> 
+   <ul> 
+    <li> 
+     <!--link to home page--> <a href="http://cpst.tulane.edu/~ssimon6/cpst240010/">Stuart Simon's Home Page: All Assignments</a> </li> 
+   </ul> 
+   <ul> 
+    <!-- HTML 82: To create a text link to a document, step 2 --> 
+    <li> <a href="home.htm">Home</a> </li> 
+    <!-- Step 3 --> 
+    <li> <a href="tips.htm">Tips</a> </li> 
+    <!-- Step 4 --> 
+    <li> <a href="glossary.htm">Glossary</a> </li> 
+   </ul> 
+  </nav> 
+  <section> 
+   <p> Welcome to CAMshots, a site for people passionate about digital photography. This site has grown out of decades of photographic experience. I offer advice for both beginners and advanced users. I hope you enjoy what you find, but please be considerate of the work it took to do all this. The entire site contents including all images and articles are copyrighted. Please honor my work and do not copy anything without permission. If you are interested in publishing any of my images or articles or using them in other ways, please 
+    <!-- HTML 116: To link to an e-mail address on Gerry's home page, step 3 --> <a href="mailto:ghayward@camshots.com?subject=CAMshots%20Message">contact me</a> and we can discuss your needs. Happy Shooting! </p> 
+   <p>— Gerry</p> 
+  </section> 
+  <aside> 
+   <h1>Photo of the Month</h1> 
+   <figure> 
+    <!-- HTML 102: To link the Photo of the Month image, step 2 --> 
+    <a href="rainbow_lg.png"> <img src="rainbow.png" alt="Photo" /> </a> 
+    <figcaption> 
+     <i>Colorado Double Rainbow by Watts213</i> 
+    </figcaption> 
+   </figure> 
+   <ul> 
+    <li>Camera: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nikon D50 </li> 
+    <!-- HTML 97: To create links to the glossary entries, step 3 --> 
+    <li> <a href="glossary.htm#f-stop">F-stop</a> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f/7.1 </li> 
+    <!-- HTML 97: To create links to the glossary entries, step 4 --> 
+    <li> <a href="glossary.htm#exposure">Exposure</a> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/200 sec. </li> 
+    <!-- HTML 97: To create links to the glossary entries, step 5 (Focal length, Aperture, Flash mode) --> 
+    <li> <a href="glossary.htm#focal_length">Focal Length</a> : &nbsp; 18mm </li> 
+    <li> <a href="glossary.htm#aperture">Aperture</a> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.6 </li> 
+    <li> <a href="glossary.htm#flash_mode">Flash Mode</a> : &nbsp;&nbsp;&nbsp; No flash </li> 
+   </ul> 
+  </aside> 
+  <footer> 
+   <address> CAMshots ››› Advice and News from the World of Digital Photography </address> 
+  </footer>  
+ </body>
+</html>

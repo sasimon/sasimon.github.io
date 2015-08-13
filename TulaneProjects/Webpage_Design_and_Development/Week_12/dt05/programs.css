@@ -1,0 +1,86 @@
+/*
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 08/02/2015
+Text editor: jEdit, http://www.jedit.org/
+*/
+
+/* Style for the table */
+
+table.programs {
+	width: 100%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+/* Style for the caption */
+table.programs caption {
+	caption-side: bottom;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+/* Styles for rows and columns */
+
+table.programs tr {
+	height: 25px;
+}
+
+table.programs col.timeColumn {
+	width: 10%;
+	background-color: rgb(215,205,151);
+}
+
+table.programs col.wDayColumns {
+	width: 11%;
+	background-color: rgb(236,255,211);
+}
+
+table.programs col.wEndColumns {
+	width: 17%;
+	background-color: rgb(255,231,255);
+}
+
+
+/* Styles for the table header */
+table.programs thead th {
+	font-size: 0.7em;
+	border: 1px solid gray;
+}
+
+table.programs thead th:first-of-type {
+	background-color: rgb(153,86,7);
+}
+
+table.programs thead th:nth-of-type(7), table.programs thead th:nth-of-type(8) {
+	background-color: rgb(153,0,153);
+}
+
+	
+/* Styles for the table body */
+table.programs tbody td {
+	font-size: 0.7em;
+	vertical-align: top;
+	border: 1px solid gray;
+	padding: 2px;
+}
+
+/* Style for the introductory paragraph */
+
+section#intro p {
+	-moz-column-count: 3;
+	-webkit-column-count:3;
+	column-count: 3;
+	
+	-moz-column-gap: 3;
+	-webkit-column-gap: 3;
+	column-gap: 20px;
+	
+	-moz-column-rule: 1px solid black;
+	-webkit-column-rule: 1px solid black;
+	column-rule: 1px solid black;
+}
+
+
+	

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 07/11/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the
+        primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>February at the Chamberlain Civic Center</title> 
+  <!--  charset attribute specifies the character encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <!-- ccc.css is a reset style sheet, and the style sheet applied to all Web
+     pages in the Chamberlain site --> 
+  <link href="ccc.css" rel="stylesheet" type="text/css" /> 
+  <!-- Calendar style sheet (#12, 25pts) --> 
+  <link href="calendar.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <header> 
+   <img src="ccc.jpg" alt="The Chamberlain Civic Center" /> 
+  </header> 
+  <!-- Extra nav bar contains links to assignment Web site home, KPAF, and the
+elements discussion --> 
+  <nav id="extra"> 
+   <ul> 
+    <li><a href="../">Stuart Simon's Assignment Web Site Home</a></li> 
+    <li><a href="schedule.htm">KPAF Schedule</a></li> 
+    <li><a href="elements.htm">Elements</a></li> 
+   </ul> 
+  </nav> 
+  <nav> 
+   <!-- An extra style rule in "ccc.css" will be defined to deal with items
+belonging to the "current" class --> 
+   <ul> 
+    <li><a href="home.htm">Home</a></li> 
+    <!-- Calendar link --> 
+    <li class="current">Events</li> 
+    <li><a href="boxoffice.htm">Box Office</a></li> 
+    <li><a href="facilities.htm">Facilities</a></li> 
+    <li><a href="directions.htm">Directions</a></li> 
+    <li><a href="contact.htm">Contact Us</a></li> 
+    <!-- Extra links --> 
+    <li><a href="links.htm">Links</a></li> 
+   </ul> 
+  </nav> 
+  <section id="summary" class="bodytext"> 
+   <h1>Coming in February</h1> 
+   <div> 
+    <!-- #7, 8pts out of 20: Italics have been replaced with seven links, with one
+ added --> 
+    <p>February will be another banner month at the Chamberlain Civic Center with a two day performance of the Tony Award winning musical, <a href="http://www.westsidestory.com/">West Side Story</a> by the Broadway Touring Company. Tickets are going fast, so order yours today. </p> 
+    <p>Celebrate Valentine's Day with the <a href="http://sdsymphony.org/">Chamberlain Symphony</a> and their special selection of classical music for lovers. The next day, exercise your mind by attending the Charles Dickens classic, <a href="http://www.rupertholmes.com/theatre/drood.html">The Mystery of Edwin Drood</a>. </p> 
+    <p>Jazz lovers have a lot to celebrate in February with a visit from the <a href="http://www.neworleans.me/events/detail/742/The-Preservation-Hall-Jazz-Masters-featuring-Leroy-Jones">Jazz Masters</a> on February 10th, and then on February 21st, enjoy the music of The Duke with an <a href="http://www.dukeellington.com/">Ellington Tribute</a> performed by the Jazz Company of Kansas City. </p> 
+    <p>Pins, bottles, plates, and chairs are flying at the Chamberlain Civic Center in February. The <a href="http://mondavicenter.ucdavis.edu/education/education_pdfs/national_acrobats_china.pdf">Taiwan Acrobats</a> return with another amazing performance. Then, on February 25th, the <a href="http://www.madjugglers.com/">Madtown Jugglers</a> get into the act with their unique blend of comedy, juggling, and madness. </p> 
+    <p>Enjoy a classical brunch every Sunday in February with music provided by the <a href="http://articles.baltimoresun.com/2001-06-03/entertainment/0106030297_1_carson-scholars-fund-carson-four-awards-banquet">Carson Quartet</a>. Seating is limited, so please order your table in advance. </p> 
+   </div> 
+   <!-- Calendar (#11, 25pts) --> 
+   <table class="calendar"> 
+    <caption>
+     Events at the CCC
+    </caption> 
+    <colgroup> 
+     <col class="weekdays" span="5" /> 
+     <col class="weekends" span="2" /> 
+    </colgroup> 
+    <thead> 
+     <tr> 
+      <th>Sun</th> 
+      <th>Mon</th> 
+      <th>Tue</th> 
+      <th>Wed</th> 
+      <th>Thu</th> 
+      <th>Fri</th> 
+      <th>Sat</th> 
+     </tr> 
+    </thead> 
+    <tbody> 
+     <tr> 
+      <!-- Week 1 --> 
+      <!-- January --> 
+      <!-- Sun --> 
+      <td> <h3>26</h3> </td> 
+      <!-- Mon --> 
+      <td> <h3>27</h3> </td> 
+      <!-- Tue --> 
+      <td> <h3>28</h3> </td> 
+      <!-- Wed --> 
+      <td> <h3>29</h3> </td> 
+      <!-- Thu --> 
+      <td> <h3>30</h3> </td> 
+      <!-- Fri --> 
+      <td> <h3>31</h3> </td> 
+      <!-- February --> 
+      <!-- Sat --> 
+      <td> <h3>1</h3> 
+       <dl> 
+        <dt>
+         Taiwan Acrobats
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $16/$24/$36 
+        </dd> 
+       </dl> </td> 
+     </tr> 
+     <!-- Week 2 --> 
+     <tr> 
+      <!-- Sun --> 
+      <td> <h3>2</h3> 
+       <dl> 
+        <dt>
+         Carson Quartet
+        </dt> 
+        <dd>
+          1 pm 
+         <br /> $8 
+        </dd> 
+       </dl> </td> 
+      <!-- Mon --> 
+      <td> <h3>3</h3> </td> 
+      <!-- Tue --> 
+      <td> <h3>4</h3> </td> 
+      <!-- Wed --> 
+      <td> <h3>5</h3> 
+       <dl> 
+        <dt>
+         Joey Gallway
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $16/$24/$36 
+        </dd> 
+       </dl> </td> 
+      <!-- Thu --> 
+      <td> <h3>6</h3> </td> 
+      <!-- Fri --> 
+      <td> <h3>7</h3> 
+       <dl> 
+        <dt>
+         West Side Story
+        </dt> 
+        <dd>
+          7 pm 
+         <br /> $24/$36/$64 
+        </dd> 
+       </dl> </td> 
+      <!-- Sat --> 
+      <td> <h3>8</h3> 
+       <dl> 
+        <dt>
+         West Side Story
+        </dt> 
+        <dd>
+          7 pm 
+         <br /> $24/$36/$64 
+        </dd> 
+       </dl> </td> 
+     </tr> 
+     <!-- Week 3 --> 
+     <tr> 
+      <!-- Sun --> 
+      <td> <h3>9</h3> 
+       <dl> 
+        <dt>
+         Carson Quartet
+        </dt> 
+        <dd>
+          1 pm 
+         <br /> $8 
+        </dd> 
+       </dl> </td> 
+      <!-- Mon --> 
+      <td> <h3>10</h3> 
+       <dl> 
+        <dt>
+         Jazz Masters
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $18/$24/$32 
+        </dd> 
+       </dl> </td> 
+      <!-- Tue --> 
+      <td> <h3>11</h3> </td> 
+      <!-- Wed --> 
+      <td> <h3>12</h3> </td> 
+      <!-- Thu --> 
+      <td> <h3>13</h3> 
+       <dl> 
+        <dt>
+         Harlem Choir
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $18/$24/$32 
+        </dd> 
+       </dl> </td> 
+      <!-- Fri --> 
+      <td> <h3>14</h3> 
+       <dl> 
+        <dt>
+         Chamberlain Symphony
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $18/$24/$32 
+        </dd> 
+       </dl> </td> 
+      <!-- Sat --> 
+      <td> <h3>15</h3> 
+       <dl> 
+        <dt>
+         Edwin Drood
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $24/$36/$44 
+        </dd> 
+       </dl> </td> 
+     </tr> 
+     <!-- Week 4 --> 
+     <tr> 
+      <!-- Sun --> 
+      <td> <h3>16</h3> 
+       <dl> 
+        <dt>
+         Carson Quartet
+        </dt> 
+        <dd>
+          1 pm 
+         <br /> $8 
+        </dd> 
+       </dl> </td> 
+      <!-- Mon --> 
+      <td> <h3>17</h3> </td> 
+      <!-- Tue --> 
+      <td> <h3>18</h3> </td> 
+      <!-- Wed --> 
+      <td> <h3>19</h3> 
+       <dl> 
+        <dt>
+         The Yearling
+        </dt> 
+        <dd>
+          7 pm 
+         <br /> $8/$14/$18 
+        </dd> 
+       </dl> </td> 
+      <!-- Thu --> 
+      <td> <h3>20</h3> </td> 
+      <!-- Fri --> 
+      <td> <h3>21</h3> 
+       <dl> 
+        <dt>
+         An Ellington Tribute
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $24/$32/$48 
+        </dd> 
+       </dl> </td> 
+      <!-- Sat --> 
+      <td> <h3>22</h3> 
+       <dl> 
+        <dt>
+         Othello
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $18/$28/$42 
+        </dd> 
+       </dl> </td> 
+     </tr> 
+     <!-- Week 5 --> 
+     <tr> 
+      <!-- Sun --> 
+      <td> <h3>23</h3> 
+       <dl> 
+        <dt>
+         Carson Quartet
+        </dt> 
+        <dd>
+          1 pm 
+         <br /> $8 
+        </dd> 
+       </dl> </td> 
+      <!-- Mon --> 
+      <td> <h3>24</h3> </td> 
+      <!-- Tue --> 
+      <td> <h3>25</h3> 
+       <dl> 
+        <dt>
+         Madtown Jugglers
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $12/$16/$20 
+        </dd> 
+       </dl> </td> 
+      <!-- Wed --> 
+      <td> <h3>26</h3> </td> 
+      <!-- Thu --> 
+      <td> <h3>27</h3> </td> 
+      <!-- Fri --> 
+      <td> <h3>28</h3> 
+       <dl> 
+        <dt>
+         Ralph Williams
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $32/$48/$64 
+        </dd> 
+       </dl> </td> 
+      <!-- March --> 
+      <!-- Sat --> 
+      <td> <h3>1</h3> 
+       <dl> 
+        <dt>
+         Othello
+        </dt> 
+        <dd>
+          8 pm 
+         <br /> $18/$28/$42 
+        </dd> 
+       </dl> </td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </section> 
+  <section id="events"> 
+  </section> 
+  <footer> 
+   <address> The Chamberlain Civic Center &nbsp;&nbsp;&nbsp; 2011 Canyon Drive &nbsp;&nbsp;&nbsp; Chamberlain, SD 53725 &nbsp;&nbsp;&nbsp; (605)555-8741 </address> 
+  </footer>   
+ </body>
+</html>

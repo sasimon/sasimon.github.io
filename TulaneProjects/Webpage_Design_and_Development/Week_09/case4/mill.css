@@ -1,0 +1,65 @@
+/*
+     HTML and CSS 6th Edition: Comprehensive
+     Author: Stuart Simon
+     Date: 07/19/2015
+     Text editor: jEdit, http://www.jedit.org/
+*/
+
+/* #7, 5pts: More than five style rules here (mill.css) */
+
+/* Body styles */
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Header styles */
+
+header h2 {
+	background-color: blue;
+	color: white;
+	clear: left;
+}
+
+header img {
+	display: block;
+	float: left;
+}
+
+nav ul li {
+	display: block;
+	float: left;
+	clear: none;
+	list-style: none;
+	background-color: cyan;
+	padding: 10px;
+}
+
+nav ul li:hover {
+	background-color: magenta;
+}
+
+nav ul li:active {
+	background-color: yellow;
+}
+
+nav ul li a, nav ul li a:visited, nav ul li a:hover, nav ul li a:active {
+	color: white;
+	text-decoration: none;
+}
+
+section {
+	clear: both;
+}
+
+/* Drop cap */
+section p:first-of-type::first-letter {
+	float: left;
+	clear: left;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-size:72pt;
+}
+
+

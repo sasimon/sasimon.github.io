@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 08/02/2015
+Text editor: jEdit, http://www.jedit.org/
+-->
+<!-- according to the W3C I should declare the language (en=english) of my Web pages -->
+<html lang="en">
+<head>
+     <title>KPAF Radio Morning Schedule</title>
+     <!--  charset attribute specifies the encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html -->
+     <meta charset="utf-8" />
+     <!-- java script that supports HTML5 for browsers that do not -->
+     <script src="http://www.tulane.edu/~gnorth/modernizr.js"></script>
+     <!-- links to external style sheet(s) go here -->
+     <link type="text/css" rel="stylesheet" href="kpaf2.css" />
+     <link type="text/css" rel="stylesheet" href="programs.css" />
+
+</head>
+<body>
+
+      <header>
+         <h1>| Listener supported<em>since</em> 1966</h1>
+         <nav>
+            <ul>
+            	<li><a href="../../">Assignments Home</a></li>
+            	<li><a href="../">Week 12 Home</a></li>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Schedule</a></li>
+               <li><a href="#">Programs</a></li>
+               <li><a href="#">Music</a></li>
+               <li><a href="#">News</a></li>
+               <li><a href="#">Events</a></li>
+               <li><a href="#">Listen Live</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Support KPAF</a></li>
+            </ul>
+         </nav>
+      </header>
+
+      <section id="intro">
+         <div class="hgroup">
+            <h1><img alt="KPAF" src="kpaf.jpg" /></h1>
+            <h2>KPAF Morning Schedule</h2>
+         </div>
+
+         <p>KPAF airs listener-supported public radio in Bismarck, North Dakota from 
+            5:00 a.m. to 10:30 p.m.<br />You can<a href="#">Listen Live</a> to streaming audio 
+            of our broadcast or download programs from our<a href="#">Podcast</a>.<br />Please refer below for our current morning schedule.</p>
+            
+         <table class="programs">
+         <!-- Lists the morning programs aired from KPAF from 5:00 a.m. to 12:00 p.m. (central time) -->
+         <caption>All Times Central</caption>
+         <colgroup>
+         	<col class="timeColumn" />
+         	<col class="wDayColumns" span="5" />
+         	<col class="wEndColumns" span="2" />
+         </colgroup>
+         <thead>
+         	<tr>
+         		<th>Time</th>
+         		<th>Monday</th>
+         		<th>Tuesday</th>
+         		<th>Wednesday</th>
+         		<th>Thursday</th>
+         		<th>Friday</th>
+         		<th>Saturday</th>
+         		<th>Sunday</th>
+         	</tr>
+         </thead>
+         <tbody>
+         	<tr>
+         		<th>5:00</th>
+         		<td colspan="5" rowspan="4">Dawn Air</td>
+         		<td rowspan="4">Dawn Air Weekends</td>
+         		<td rowspan="2">Sunday Magazine</td>
+         	</tr>
+         	<tr>
+         		<th>5:30</th>
+         	</tr>
+         	<tr>
+         		<th>6:00</th>
+         		<td rowspan="2">Weekend Reflections</td>
+         	</tr>
+         	<tr>
+         		<th>6:30</th>
+         	</tr>
+         	<tr>
+         		<th>7:00</th>
+         		<td colspan="5">Local News</td>
+         		<td rowspan="2">Weekend Wrap</td>
+         		<td rowspan="2">Radio Wrap</td>
+         	</tr>
+         	<tr>
+         		<th>7:30</th>
+         		<td colspan="5">World News Feed</td>
+         	</tr>
+         	<tr>
+         		<th>8:00</th>
+         		<td colspan="5" rowspan="4">Classical Roots</td>
+         		<td rowspan="3">What Can You Say</td>
+         		<td rowspan="4">University on the Air</td>
+         	</tr>
+         	<tr>
+         		<th>8:30</th>
+         	</tr>
+         	<tr>
+         		<th>9:00</th>
+         	</tr>
+         	<tr>
+         		<th>9:30</th>
+         		<td rowspan="3">Animal Talk</td>
+         	</tr>
+         	<tr>
+         		<th>10:00</th>
+         		<td colspan="5" rowspan="4">Symphony City</td>
+         		<td>Wordplay</td>
+         	</tr>
+         	<tr>
+         		<th>10:30</th>
+         		<td>Brain Stew</td>
+         	</tr>
+         	<tr>
+         		<th>11:00</th>
+         		<td rowspan="3">Opera Live from the East Coast</td>
+         		<td>The Inner Mind</td>
+         	</tr>
+         	<tr>
+         		<th>11:30</th>
+         		<td>Grammar Rules!</td>
+         	</tr>
+         	<tr>
+         		<th>12:00</th>
+         		<td colspan="5">Book Club</td>
+         		<td>Weekend Wrap</td>
+         	</tr>
+         </tbody>
+         
+         </table>
+         
+
+      </section>
+
+
+      <footer>
+         <address>
+            KPAF · 
+            4300 Magnolia Lane ·
+            Bismarck, ND 58504 ·
+            (701) 555 - 5611</address>
+      </footer>
+
+
+
+
+
+
+</body>
+</html>

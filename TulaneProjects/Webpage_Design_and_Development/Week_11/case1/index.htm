@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    HTML and CSS 6th Edition: Comprehensive
+    Author: Stuart Simon
+    Date: 07/27/2015
+    Text Editor: jEdit, http://www.jedit.org/
+    -->
+<!--  according to the W3C recommendation I should declare the 
+	primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>some_sort_of_name_or_the_other</title> 
+  <!--  charset attribute specifies the character encoding for 
+    	the HTML document (utf-8 = Unicode) 
+    	see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="dwbase.css" rel="stylesheet" type="text/css" /> 
+  <link href="dwlayout.css" rel="stylesheet" type="text/css" /> 
+  <link href="dweffects.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <header> 
+   <div id="div1">
+     Recipes | Ingredients | Articles 
+    <br /> 
+    <input id="sbox" name="sfield" type="search" /> 
+    <input id="sbutton" placeholder="search term" type="button" value="Search" /> 
+   </div> 
+   <div id="div2">
+     Password 
+    <br /> 
+    <input id="pwd" name="pwd" placeholder="password" type="text" /> 
+    <input id="lbutton" type="button" value="Log In" /> 
+   </div> 
+   <div id="div3">
+     User Name 
+    <br /> 
+    <input id="user" name="user" placeholder="username" type="text" /> 
+   </div> 
+   <h1>dessertWeb</h1> 
+   <nav class="horizontal"> 
+    <ul> 
+     <li><a href="../../">CPST 2400 Home</a></li> 
+     <li><a href="../tutorial/treebook.htm">Tree and Book</a></li> 
+     <li><a href="../elements.htm">Elements</a></li> 
+     <li><a href="index.htm">DessertWEB Home</a></li> 
+     <li><a href="orbread.htm">Oatmeal Raisin Bread</a></li> 
+     <li><a href="relatedRecipes.htm">Links to External Sites</a></li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <section id="left"> 
+   <nav class="vertical"> 
+    <h1>Categories</h1> 
+    <ul> 
+     <li><a href="#">Cakes</a></li> 
+     <li><a href="#">Candies</a></li> 
+     <li><a href="#">Chocolate</a></li> 
+     <li><a href="#">Cookies</a></li> 
+     <li><a href="#">Crisps</a></li> 
+     <li><a href="#">Crumbles</a></li> 
+     <li><a href="#">Custards</a></li> 
+     <li><a href="#">Frozen Treats</a></li> 
+     <li><a href="#">Gelatins</a></li> 
+     <li><a href="#">Liqueur Desserts</a></li> 
+     <li><a href="#">Marshmallows</a></li> 
+     <li><a href="#">Meringues</a></li> 
+     <li><a href="#">Mousse</a></li> 
+     <li><a href="#">Pies</a></li> 
+     <li><a href="#">Pralines</a></li> 
+     <li><a href="#">Sauces</a></li> 
+     <li><a href="#">Truffles</a></li> 
+    </ul> 
+   </nav> 
+  </section> 
+  <section id="center" class="home">
+    Welcome to DessertWeb! 
+  </section>  
+ </body>
+</html>

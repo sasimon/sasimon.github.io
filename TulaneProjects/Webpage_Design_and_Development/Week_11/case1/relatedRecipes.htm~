@@ -1,0 +1,39 @@
+<!DOCTYPE  html>
+
+<!--
+    HTML and CSS 6th Edition: Comprehensive
+    Author: Stuart Simon
+    Date: 07/27/2015
+    Text Editor: jEdit, http://www.jedit.org/
+    -->
+
+<!--  according to the W3C recommendation I should declare the 
+	primary language (en = english) of my WebPages -->
+<html lang="en">
+
+<head>
+
+
+    <title>some_sort_of_name_or_the_other</title>
+
+    <!--  charset attribute specifies the character encoding for 
+    	the HTML document (utf-8 = Unicode) 
+    	see http://www.unicode.org/standard/WhatIsUnicode.html -->
+    <meta charset="utf-8"/>
+
+    <!-- java script that supports HTML5 for Browsers that do not -->
+    <script src="http://www.tulane.edu/~gnorth/modernizr.js"></script>
+
+
+    <!--  link(s) to a external style sheet(s) go here -->
+    <link href="name_of_some_stylesheet.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+/*
+   HTML and CSS 6th Edition: Comprehensive
+   Author: Stuart Simon 
+   Date: 07/04/2015   
+
+   Filename:         cp_styles.css
+   Supporting Files: atwood.png, bike_bg.png, rawlings.png
+
+
+   Text editor: jEdit, http://www.jedit.org/
+*/
+
+/* Styles for the Page Body */
+/* HTML 235 */
+
+body {
+	background: black url(bike_bg.png) top left no-repeat;
+	position: relative; /* HTML 295, To position the entire page body */
+	/* HTML 241 */
+	width: 95%;
+	min-width: 1000px;
+	max-width: 1400px;
+	 
+}
+
+/* Begin HTML 291 (To place the page header) */
+
+header {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+/* Begin HTML 244 */
+/* General Navigation List Style */
+
+nav a {
+	text-decoration: none;
+}
+
+/* Horizontal Navigation List */
+
+/* Begin HTML 255 (margin rule) */
+
+nav.horizontalNAV {
+	margin-left: 33%;
+	width: 66%
+}
+
+/* End HTML 255 */
+
+nav.horizontalNAV li {
+	font-size: 87%;
+	float: left;
+	text-align: center;
+	width: 20%;
+	padding: 15px 0px; /* padding style rule (HTML 256) */
+}
+
+nav.horizontalNAV li a {
+	color: rgb(255,255,99);
+}
+
+nav.horizontalNAV li a:hover {
+	color: white;
+}
+
+/* End HTML 244 */
+
+/* Begin HTML 247 */
+
+/* President's Message */
+
+#president {
+	background-color: rgb(105, 96, 87);
+	background-color: rgba(255, 255, 255, 0.3);
+	clear: left;
+	float: left;
+	margin-left: 33%; /* another margin rule (HTML 255) */
+	width: 40%;
+/* Begin HTML 258 (setting the background image) */
+	background-image: url(atwood.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	
+	-o-background-size: 40%; /* specific to Presto-based browsers (e.g., Opera) */
+	-moz-background-size: 40%; /* specific to Gecko-based browsers (e.g., Firefox) */
+	-webkit-background-size: 40%; /* specific to Webkit-based browsers (e.g., Chrome, Safari) */
+	background-size: 40%; /* fallback rule if browsers do not match any of the above */
+/* End HTML 258 */
+/* Begin HTML 269 (setting radius of rounded borders */
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+/* End HTML 269 */
+}
+
+/* End HTML 247 */
+
+/* Begin HTML 257 */
+
+#president h1 {
+	font-family: 'Lucida Calligraphy', 'Apple Chancery', cursive;
+	font-size: 158%;
+	font-weight: bold;
+	margin: 10px 0px 0px 10px;
+}
+
+#president h2 {
+	font-size: 105%;
+	margin: 0px 0px 10px 15px;
+}
+
+/* End HTML 257 */
+
+/* Begin HTML 258 (preparing for background image) */
+
+#president p {
+	font-size: 87.5%;
+	margin: 0px 40% 20px 15px;
+}
+
+/* End HTML 258 */
+
+/* Begin HTML 259 */
+
+/* Vertical navigation list */
+
+nav.verticalNAV {
+	float: left;
+	margin-left: 3%;
+	width: 23%;
+}
+nav.verticalNAV a {
+	color: rgb(182, 182, 92);
+	line-height: 2.2em;
+	/* Begin HTML 265 (setting of borders and adding hover style rule) */
+	border-bottom: 1px solid rgb(182, 182, 92);
+	display: block;
+}
+
+nav.verticalNAV a:hover {
+	background-color: rgb(105, 96, 87);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* End HTML 259 */
+
+/* HTML 273 (setting outline to view page elements) 
+* {
+	outline: 1px solid red;
+}
+*/
+
+/* Begin HTML 273 */
+
+/* Story section styles */
+
+#story {
+	background-color: gray;
+	background-color: rgba(255, 255, 255, 0.8);
+	clear: left;
+	float: left;
+	margin: 20px 0px 0px 33%;
+	width: 66%;
+}
+
+/* Article styles */
+
+#story article {
+	border-right: 1px solid black;
+	float: left;
+	width: 50%;
+}
+
+/* Begin HTML 276 (Since <hgroup></hgroup> is deprecated by W3C, 
+I have changed all occurrences of <hgroup></hgroup> to <div class="hgroup">
+</div>. This is not reflected in the other stylesheet because until I came to
+HTML 276, I had simply removed the <hgroup></hgroup> elements and not
+included div elements in their places. */
+
+#story article div.hgroup {
+	background: rgb(97, 30, 2) url(rawlings.png) bottom right no-repeat;
+	
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+	
+	height: 90px;
+	text-indent: 10px;
+}
+
+#story article div.hgroup h1 {
+	font-size: 158%;
+	letter-spacing: 3px;
+}
+
+#story article div.hgroup h2 {
+	font-size: 105%;
+}
+
+/* End HTML 276 */
+
+/* Begin HTML 278 */
+
+#story article p {
+	font-size: 80%;
+	margin: 10px;
+}
+
+#story article ul li {
+	font-size: 80%;
+	margin: 15px 25px;
+}
+
+#story article ul li strong {
+	font-weight: bold
+}
+
+/* End HTML 278 */
+
+/* Figure box style */
+
+#story figure {
+	float: left;
+	width: 49%;
+}
+
+/* End HTML 276 */
+
+/* Begin HTML 279 (formatting the figure box) */
+
+#story figure img {
+	border: 5px inset rgb(227, 168, 145);
+	display: block;
+	margin: 30px auto 10px;
+	width: 80%
+}
+
+#story figure figcaption {
+	font-size: 75%;
+	font-style: italic;
+	text-align: center;
+}
+
+/* End HTML 279 */
+
+/* Begin HTML 292, To place the sidebar */
+
+/* Sidebar styles */
+
+aside {
+	color: rgb(145, 98, 78);
+	
+	position: absolute;
+	top: 400px;
+	left: 10px;
+	
+	width: 30%;
+	/* Begin HTML 294, To define the overflow for the aside element */
+	height: 450px;
+	overflow: auto;
+}
+
+/* End HTML 292 */
+
+/* HTML 301, To style the footer and address */
+
+footer {
+	clear: left;
+	margin-left: 33%;
+	width: 66%;
+}
+
+footer address {
+	color: rgb(182, 182, 92);
+	font-size: 80%;
+	font-style: normal;
+	padding-top: 10px;
+	text-align: center;
+}

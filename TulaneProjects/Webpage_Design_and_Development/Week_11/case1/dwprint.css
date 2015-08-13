@@ -1,0 +1,61 @@
+/*
+    HTML and CSS 6th Edition: Comprehensive
+    Author: Stuart Simon
+    Date: 07/27/2015
+    Text Editor: jEdit, http://www.jedit.org/
+    /*
+
+/* #8, 5pts: dwprint.css */
+
+/* Page style 8.5 x 11 in., portrait, with margin of 0.5in */
+
+@page {
+	size: 8.5in 11in;
+	margin: 0.5in;
+}
+
+/* Hidden elements */
+
+header, section#left, section#right, nav, aside, footer, div.hgroup h2, article
+p:last-of-type {
+	display: none;
+}
+
+/* Heading enlargement */
+
+h1 {
+	font-size: 200%;
+	margin-bottom: 0.2in;
+}
+
+h2 {
+	font-size: 150%;
+	margin-top: 0.5in;
+}
+
+/* List item line height */
+
+li {
+	line-height: 1.5em;
+}
+
+/* Ordered list style */
+
+ol li {
+	margin-left: 0.5in;
+	list-style-type: decimal;
+}
+
+/* Setting the page break to occur after the last h2 element on the page */
+
+@page h2:last-of-type {
+	page-break-after: always;
+}
+
+/* Setting the display of links on the links page */
+
+section.links a {
+	color: black;
+	text-decoration: none;
+}
+

@@ -1,0 +1,153 @@
+/*
+   HTML and CSS 6th Edition: Comprehensive
+   Author: Stuart Simon 
+   Date: 07/19/2015   
+
+   Filename:         forms.css
+   Supporting Files: customer.png, go.png, stop.png
+
+
+   Text editor: jEdit, http://www.jedit.org/
+*/
+
+
+/* Field set styles (HTML 411) */
+
+fieldset {
+	background-color: rgb(255,246,405);
+	border: 1px solid rgb(233,69,0);
+	float: left;
+	margin: 10px 0px 10px 2.5%;
+	width: 46%;
+}
+
+/* HTML 412 */
+legend {
+	background-color: rgb(233,69,0);
+	color: white;
+	padding: 3px 0px;
+	text-indent: 5px;
+	width: 100%;
+}
+
+/* Label styles and input control styles (HTML 413) */
+
+/* Label styles */
+label {
+	clear: left;
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 4% 7px 5px;
+	width: 40%;
+}
+
+/* Input control styles */
+input {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 0px;
+	width: 50%;
+}
+
+/* Width of the state field (HTML 415) */
+input#state {
+	width: 50px;
+}
+
+/* Selection list styles (HTML 424) */
+select {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 0px;
+}
+
+/* Option button styles (HTML 432) */
+
+fieldset.optionGroup {
+	border-width: 0px;
+}
+
+fieldset.optionGroup label {
+	display: inline;
+	float: none;
+	margin: 0px 3px 0px 0px;
+	width: 30px;
+}
+
+fieldset.optionGroup input {
+	display: inline;
+	float: none;
+	margin: 0px 20px 0px 0px;
+	width: 20px;
+}
+
+/* Text area styles (HTML 436) */
+
+textarea {
+	display: block;
+	font-size: 0.9em;
+	float: left;
+	height: 150px;
+	margin: 10px 0px;
+	width: 50%;
+}
+
+/* Check box styles (HTML 439) */
+
+#newsletter {
+	color: rgb(233,69,0);
+	float: none;
+	margin: 10px auto;
+	text-align: center;
+	width: 90%;
+}
+
+#newsletter input {
+	display: inline;
+	float: none;
+	width: 20px;
+}
+
+/* Number input box styles (HTML 449) */
+
+#ordersPerMonth {
+	width: 70px;
+}
+
+/* Range slider styles (HTML 452) */
+
+label.sliderLabel {
+	clear: none;
+	font-size: 0.7em;
+	margin: 10px 0px;
+	text-align: center;
+	width: 10px;
+}
+
+input[type="range"] {
+	width: 150px;
+}
+
+/* Button styles (HTML 458) */
+
+form p {
+	text-align: center;
+}
+
+input[type="submit"], input[type="reset"] {
+	display: inline;
+	float: none;
+	height: 40px;
+	width: 200px;
+}
+
+/* Validation styles */
+
+/* Focus pseudo-class (HTML 467) */
+
+input:focus, textarea:focus, select:focus {
+	background-color: rgb(220,255,220);
+}

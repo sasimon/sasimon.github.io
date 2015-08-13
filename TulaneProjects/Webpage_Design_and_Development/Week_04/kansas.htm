@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date:  06/12/2015 
+Text Editor: jEdit, http://www.jedit.org/-->
+<!--according to the W3C recommendation I should declare the 
+	primary language (en = English) of my WebPages-->
+<html lang="en">
+ <head> 
+  <title>Kansas Congressional Elections</title> 
+  <!--  charset attribute specifies the character encoding for 
+    	the HTML document (utf-8 = Unicode) 
+    	see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="ewstyles.css" rel="stylesheet" type="text/css" /> 
+  <meta name="author" content="Stuart Simon" /> 
+  <meta name="keywords" content="Kansas, elections" /> 
+  <!-- All hyperlinks should open in a new window --> 
+  <base target="new" /> 
+ </head> 
+ <body>
+  <header> 
+   <img src="ewlogo.png" alt="ElectionWeb" /> 
+  </header> 
+  <nav> 
+   <ul> 
+    <li> 
+     <!--link to home page--> <a href="http://cpst.tulane.edu/~ssimon6/cpst240010/">Stuart Simon's Home Page: All Assignments</a> </li> 
+   </ul> 
+   <h2>News Sources</h2> 
+   <!-- Rubric item 7, 5pts: list of news links. I used the givens as the first 12. Rel cannot be external in accordance with new HTM5 regulations.--> 
+   <ul> 
+    <!--1--> 
+    <li> <a href="http://news.yahoo.com/">Yahoo! News</a> </li> 
+    <!--2--> 
+    <li> <a href="http://www.foxnews.com/">Fox News</a> </li> 
+    <!--3--> 
+    <li> <a href="http://www.cnn.com/">CNN</a> </li> 
+    <!--4--> 
+    <li> <a href="http://www.msnbc.com/">MSNBC</a> </li> 
+    <!--5--> 
+    <li> <a href="http://news.google.com/">Google News</a> </li> 
+    <!--6--> 
+    <li> <a href="http://www.nytimes.com/">New York Times</a> </li> 
+    <!--7--> 
+    <li> <a href="http://www.digg.com/">Digg</a> </li> 
+    <!--8--> 
+    <li> <a href="http://www.washingtonpost.com/">Washington Post</a> </li> 
+    <!--9--> 
+    <li> <a href="http://www.latimes.com/">LATimes</a> </li> 
+    <!--10--> 
+    <li> <a href="http://www.reuters.com/">Reuters</a> </li> 
+    <!--11--> 
+    <li> <a href="http://www.abcnews.com/">ABCNews</a> </li> 
+    <!--12--> 
+    <li> <a href="http://www.usatoday.com/">USA Today</a> </li> 
+    <!--#13 to 20 are added for points; Facebook, Twitter, and YouTube are for news value; NOLA.com is added for points as well, as I believe the purpose of this exercise is to have a grasp on how to write links--> 
+    <!--13--> 
+    <li> <a href="http://www.cbsnews.com/">CBS News</a> </li> 
+    <!--14--> 
+    <li> <a href="http://www.facebook.com/">Facebook</a> </li> 
+    <!--15--> 
+    <li> <a href="http://www.twitter.com/">Twitter</a> </li> 
+    <!--16--> 
+    <li> <a href="http://www.youtube.com/">YouTube</a> </li> 
+    <!--17--> 
+    <li> <a href="http://america.aljazeera.com/">Al Jazeera America</a> </li> 
+    <!--Rubric item #8: BONUS POINT: link to a classmate's ElectionWeb site--> 
+    <!--18--> 
+    <li> <a href="http://cpst.tulane.edu/~isumeros/cpst240010/Week_04/kansas.htm">Itarauma Sumeros' Election Web</a> </li> 
+    <!--19--> 
+    <li> <a href="http://www.kansas.com/news/">Kansas.com/The Wichita Eagle</a> </li> 
+    <!--20--> 
+    <li> <a href="http://www.npr.org/">National Public Radio</a> </li> 
+   </ul> 
+  </nav> 
+  <section> 
+   <h1>Kansas Statewide Races</h1> 
+   <p>The Kansas Election polls have officially been closed now for two hours and results are being constantly updated. As of 10pm with 65% of the ballots counted, leaders in the state-wide races for governor and senator are as follows:</p> 
+   <h2>Governor (65% reporting)</h2> 
+   <ul> 
+    <li>Charles Young (R) - 371,885 (47%)</li> 
+    <li>Karen Drew (D) - 356,060 (45%)</li> 
+    <li>Barry Davis (I) - 39,562 (5%)</li> 
+   </ul> 
+   <h2>U.S. Senate (65% reporting)</h2> 
+   <ul> 
+    <li>? Helen Sanchez (D) - 387,710 (49%)</li> 
+    <li>Linda Epstein (R) - 348,147 (44%)</li> 
+    <li>Hunter Ryan (I) - 47,474 (6%)</li> 
+   </ul> 
+   <p> Get up-to-the-minute election results from the <a href="http://www.kssos.org/elections/elections_statistics.html">Kansas Secretary of State.</a> </p> 
+  </section> 
+  <figure> 
+   <!-- Rubric item 6: Image map --> 
+   <img src="kansasmap.png" alt="Kansas" usemap="#kansasdistricts" /> 
+   <figcaption>
+     Click to view congressional district results 
+   </figcaption> 
+  </figure> 
+  <map name="kansasdistricts"> <area shape="poly" coords="18,10,457,16,424,54,372,56,372,99,447,100,452,203,411,205,411,188,370,189,325,184,326,220,267,221,270,289,6,282" href="district1.htm" target="_self" alt="District 1" /> <area shape="poly" coords="466,14,427,57,375,59,375,99,457,99,456,252,489,252,487,291,551,285,547,126,513,126,491,102,522,99,531,81,510,52,527,25" href="district2.htm" target="_self" alt="District 2" /> <area shape="poly" coords="535,83,525,106,501,105,519,127,546,123,546,90" href="district3.htm" target="_self" alt="District 3" /> <area shape="poly" coords="276,291,273,224,330,223,328,187,408,194,408,209,454,207,454,258,486,256,484,293" href="district4.htm" target="_self" alt="District 4" /> </map> 
+  <footer> 
+   <!--Although the em tag was not in the source of this page, it was in the source of the others, unclosed. I closed the em tags on the on the other pages and added them here; the preview on HTML 131 showed the subtitle in italics.--> ElectionWeb: 
+   <em>Your Source for Online Election Results</em> 
+  </footer>  
+ </body>
+</html>

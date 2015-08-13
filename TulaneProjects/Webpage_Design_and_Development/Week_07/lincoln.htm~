@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 07/04/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+
+<!--  according to the W3C recommendation I should declare the
+        primary language (en = english) of my WebPages -->
+<html lang="en">
+
+<head>
+
+     <title>Lincoln's Second Inaugural Address</title>
+
+     <!--  charset attribute specifies the character encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html -->
+     <meta charset="utf-8" />
+
+     <!-- java script that supports HTML5 for Browsers that do not -->
+     <script src="http://www.tulane.edu/~gnorth/modernizr.js"></script>
+
+
+     <!--  link(s) to a external style sheet(s) go here -->
+     <link href="history.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<header>
+ <img src="arlogo.png" alt="American Rhetoric" />
+</header> 
+
+<nav class="vertical"> 
+ <ul>
+  <!-- Link to home Web site (item 11, 1pt) -->
+  <li>
+  	<a href="../../">
+  	Stuart Simon's Assignment Web Site Home
+  	</a>
+  </li>
+  <!-- Cycle Pathology (item 2, 7pts) -->
+  <li>
+  	<a href="cycle.htm">
+  	Cycle Pathology
+  	</a>
+  </li>
+  <!-- Elements (item 5, 5pts) -->
+  <li>
+  	<a href="elements.htm">
+  	Elements
+  	</a>
+  </li>
+  <li>&nbsp;
+  </li>
+  <!-- Links in original nav bar replaced with actual links; 5 additional links added (item 8, 10pts) -->
+  <li>
+   <a href="http://www.history.org/almanack/life/politics/giveme.cfm">
+    Give Me Liberty or Give Me Death 
+    <br />
+     Patrick Henry
+   </a>
+  </li> 
+  <li>
+   <a href="http://www.feminist.com/resources/artspeech/genwom/sojour.htm">
+    Ain't I a Woman? 
+    <br />
+     Sojourner Truth
+   </a>
+  </li> 
+  <li>
+   <a href="http://www.abrahamlincolnonline.org/lincoln/speeches/house.htm">
+    A House Divided 
+    <br />
+     Abraham Lincoln
+   </a>
+  </li> 
+  <li>
+   <a href="http://www.abrahamlincolnonline.org/lincoln/speeches/gettysburg.htm">
+    The Gettysburg Address 
+    <br />
+     Abraham Lincoln
+   </a>
+  </li>
+  <!-- Extra item #2 -->
+  <li>
+   <a
+   href="http://voicesofdemocracy.umd.edu/everett-gettysburg-address-speech-text/">
+    The Other Gettysburg Address
+    <br />
+    Edward Everett
+   </a>
+  </li>
+  <li>
+  <!-- List item refers to current page; therefore I replaced link with strong
+  element -->
+   <strong>
+    The Second Inaugural 
+    <br />
+     Abraham Lincoln
+    </strong>
+  </li> 
+  <li>
+   <a href="http://historymatters.gmu.edu/d/5354/">
+    Cross of Gold 
+    <br />
+     William Jennings Bryan
+   </a>
+  </li> 
+  <li>
+   <a href="http://www.theodore-roosevelt.com/trsorbonnespeech.html">
+    The Man in the Arena 
+    <br />
+     Theodore Roosevelt
+   </a>
+  </li> 
+  <li>
+   <a href="http://historymatters.gmu.edu/d/5057/">
+    The Only Thing We Have to Fear 
+    <br />
+     Franklin Roosevelt
+   </a>
+  </li> 
+  <li>
+   <a href="http://historymatters.gmu.edu/d/5166">
+    A Date Which Will Live in Infamy 
+    <br />
+     Franklin Roosevelt
+   </a>
+  </li> 
+  <li>
+   <a href="http://www.pbs.org/wgbh/amex/macarthur/filmmore/reference/primary/macspeech05.html">
+    Old Soldiers Never Die 
+    <br />
+     Douglas MacArthur
+   </a>
+  </li> 
+  <li>
+   <a href="http://www.bartleby.com/124/pres56.html">
+    Inaugural Address 
+    <br />
+     John F. Kennedy
+   </a>
+  </li> 
+  <li>
+   <a href="http://millercenter.org/president/speeches/speech-3376">
+    Ich Bin Ein Berliner 
+    <br />
+     John F. Kennedy
+   </a>
+  </li> 
+  <li>
+   <a href="http://www.edchange.org/multicultural/speeches/malcolm_x_ballot.html">
+    The Ballot or the Bullet 
+    <br />
+     Malcolm X
+   </a>
+  </li> 
+  <li>
+   <a href="http://www.americanrhetoric.com/speeches/mlkihaveadream.htm">
+    I Have a Dream 
+    <br />
+     Martin Luther King, Jr.
+   </a>
+  </li>
+  <li>
+   <a href="http://www.reagan.utexas.edu/archives/reference/timechoosing.html">
+    A Time for Choosing 
+    <br />
+     Ronald Reagan
+   </a>
+  </li>
+  <!-- Extra item #3 -->
+  <li>
+   <a
+   href="http://www.americanrhetoric.com/speeches/mariosaviosproulhallsitin.htm">
+   Sproul Hall Sit-in
+   <br />
+    Mario Savio
+   </a>
+  </li>
+  <!-- Extra item #1 --> 
+  <li>
+   <a href="http://www.historyplace.com/speeches/nixon-farewell.htm">
+    Farewell Speech
+    <br />
+    Richard M. Nixon
+   </a>
+  </li>
+  <li>
+   <a href="http://www.americanrhetoric.com/speeches/ronaldreaganbrandenburggate.htm">
+    Tear Down This Wall 
+    <br />
+     Ronald Reagan
+   </a>
+  </li>
+  <!-- Extra item #4 -->
+  <li>
+   <a href =
+   "http://www.americanrhetoric.com/speeches/gwbush911addresstothenation.htm">
+    9/11 Address to the Nation
+    <br />
+     George W. Bush
+   </a>
+  </li>
+  <!-- Extra item #5 -->
+  <li>
+  	<a href =
+  	"http://www.americanrhetoric.com/speeches/convention2008/barackobamavictoryspeech.htm">
+  	Yes We Can
+  	<br />
+  	Barack Obama
+  </li>
+ </ul> 
+</nav> 
+<section id="speech"> 
+ <h1>Lincoln's Second Inaugural</h1> 
+ <p>
+  The Almighty has his own purposes. "Woe unto the world because of offenses! For 
+  <img src="lincoln01.png" alt="" /> 
+  <img src="lincoln02.png" alt="" /> 
+  <img src="lincoln03.png" alt="" /> 
+  <img src="lincoln04.png" alt="" /> 
+  <img src="lincoln05.png" alt="" /> 
+  <img src="lincoln06.png" alt="" /> 
+  <img src="lincoln07.png" alt="" /> 
+  <img src="lincoln08.png" alt="" /> 
+  <img src="lincoln09.png" alt="" /> 
+  <img src="lincoln10.png" alt="" />
+   it must needs be that offenses come; but woe to that man by whom the offense cometh." If we shall suppose that American slavery is one of those offenses which, in the providence of God, must needs come, but which, having continued through his appointed time, he now wills to remove, and that he gives to both North and South this terrible war, as the woe due to those by whom the offense came, shall we discern therein any departure from those divine attributes which the believers in a living God always ascribe to him? 
+ </p> 
+ <p>Fondly do we hope — fervently do we pray — that this mighty scourge of war may speedily pass away. Yet, if God wills that it continue until all the wealth piled by the bondsman's two hundred and fifty years of unrequited toil shall be sunk, and until every drop of blood drawn by the lash shall be paid by another drawn with the sword, as was said three thousand years ago, so still it must be said, "The judgments of the Lord are true and righteous altogether." </p> 
+ <p>With malice toward none; with charity for all; with firmness in the right, as God gives us to see the right, let us strive on to finish the work we are in; to bind up the nation's wounds; to care for him who shall have borne the battle, and for his widow, and his orphan — to do all which may achieve and cherish a just and lasting peace among ourselves, and with all nations. </p> 
+</section>
+</body>
+</html>

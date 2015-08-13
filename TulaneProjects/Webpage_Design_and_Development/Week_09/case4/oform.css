@@ -1,0 +1,67 @@
+/*
+     HTML and CSS 6th Edition: Comprehensive
+     Author: Stuart Simon
+     Date: 07/19/2015
+     Text editor: jEdit, http://www.jedit.org/
+*/
+
+/* #8, 5pts: More than five rules here */
+
+/* Form styles */
+div#orderForm {
+	display: table;
+}
+
+form {
+	display: table-row;
+}
+
+/* Field set styles */
+
+fieldset {
+	display: table-cell;
+	width: 40%;
+}
+
+fieldset#contactInfo {
+	float: left;
+}
+
+fieldset#order {
+	float: right;
+}
+
+/* Legend styles */
+
+legend {
+	color: white;
+}
+
+#contactInfo legend {
+	background-color: red;
+}
+
+#order legend {
+	background-color: green;
+}
+
+/* Label styles */
+
+label {
+	display: block;
+	float: left;
+	clear: both;
+}
+
+/* Input and select styles not for validation */
+
+input, select, textarea {
+	display: block;
+	float: right;
+	clear: right;
+}
+
+
+
+	
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 8/2/2015
+Text editor: jEdit, http://www.jedit.org/
+-->
+<!-- according to the W3C I should declare the language (en=english) of my Web pages -->
+<html lang="en">
+<head>
+
+     <title>some_sort_of_name_or_the_other</title>
+     <!--  charset attribute specifies the encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html -->
+     <meta charset="utf-8" />
+     <!-- links to external style sheet(s) go here -->
+     <link type="text/css" rel="stylesheet" href="name_of_some_stylesheet.css" />
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon 
+Date: 07/12/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the 
+	primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>Links</title> 
+  <!--  charset attribute specifies the character encoding for 
+    	the HTML document (utf-8 = Unicode) 
+    	see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="ccc.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <header> 
+   <img src="ccc.jpg" alt="The Chamberlain Civic Center" /> 
+  </header> 
+  <!-- Extra nav bar contains links to assignment Web site home, KPAF, and the
+elements discussion --> 
+  <nav id="extra"> 
+   <ul> 
+    <li><a href="../">Stuart Simon's Assignment Web Site Home</a></li> 
+    <li><a href="schedule.htm">KPAF Schedule</a></li> 
+    <li><a href="elements.htm">Elements</a></li> 
+   </ul> 
+  </nav> 
+  <nav> 
+   <!-- An extra style rule in "ccc.css" will be defined to deal with items
+belonging to the "current" class --> 
+   <ul> 
+    <li><a href="home.htm">Home</a></li> 
+    <!-- Calendar link --> 
+    <li><a href="feb.htm">Events</a></li> 
+    <li><a href="boxoffice.htm">Box Office</a></li> 
+    <li><a href="facilities.htm">Facilities</a></li> 
+    <li><a href="directions.htm">Directions</a></li> 
+    <li><a href="contact.htm">Contact Us</a></li> 
+    <!-- Extra links --> 
+    <li class="current">Links</li> 
+   </ul> 
+  </nav> 
+  <section class="bodytext"> 
+   <h1>External Links</h1> 
+   <p>Below you will find some external links that may be useful.</p> 
+   <!-- #7, 11 of 20 points: 11 of the external links are here; the remaining nine
+are eight on the Calendar page and one on the Facilities page --> 
+   <ul> 
+    <li><a href="https://lpomusic.com/">Louisiana Philharmonic Orchestra</a></li> 
+    <li><a href="http://www.neworleansopera.org/">New Orleans Opera</a></li> 
+    <li><a href="http://www.neworleansopera.org/">Tulane Summer Lyric Theatre</a></li> 
+    <li><a href="http://www.blackhillsplayhouse.com/">Black Hills Playhouse</a></li> 
+    <li><a href="http://www.dakotaplayers.com/">The Dakota Players</a></li> 
+    <li><a href="http://www.usd.edu/fine-arts/theatre">USD Department of Theatre</a></li> 
+    <li><a href="https://www.sdstate.edu/cst/sut/">SD State University Theatre</a></li> 
+    <li><a href="http://www.prairierep.org/">The Prairie Repertory Theatre</a></li> 
+    <li><a href="http://www.siouxfallsorpheum.com/">Orpheum Theatre in Sioux Falls</a></li> 
+    <li><a href="http://www.elkstheatre.com/">Elks Theatre</a></li> 
+    <li><a href="http://www.leadoperahouse.org/">Historic Homesake Opera House</a></li> 
+   </ul> 
+  </section>  
+  <footer> 
+   <address> The Chamberlain Civic Center &nbsp;&nbsp;&nbsp; 2011 Canyon Drive &nbsp;&nbsp;&nbsp; Chamberlain, SD 53725 &nbsp;&nbsp;&nbsp; (605)555-8741 </address> 
+  </footer>  
+ </body>
+</html>

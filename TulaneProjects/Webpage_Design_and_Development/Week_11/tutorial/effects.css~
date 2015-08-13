@@ -1,0 +1,14 @@
+/*
+    HTML and CSS 6th Edition: Comprehensive
+    Author: Stuart Simon
+    Date: 07/26/2015
+    Text Editor: jEdit, http://www.jedit.org/
+    /*
+
+/* Heading text styles (HTML 553) */
+
+section#main h1 {
+	color: rgb(90, 127, 0);
+	text-shadow: black 1px 1px 0px,
+				 rgba(90, 127, 0, 0.7) 5px 5px 10px;
+}

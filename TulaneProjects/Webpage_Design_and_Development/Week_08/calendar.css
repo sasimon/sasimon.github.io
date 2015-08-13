@@ -1,0 +1,113 @@
+/*
+   HTML and CSS 6th Edition: Comprehensive
+   Author: Stuart Simon 
+   Date: 07/11/2015   
+
+   Filename:         calendar.css
+   Supporting Files: bottom.jpg, bottomleft.jpg, bottomright.jpg,
+                     left.jpg, right.jpg, top.jpg,
+                     tab.jpg, topleft.jpg, topright.jpg, redtab.jpg
+
+
+   Text editor: jEdit, http://www.jedit.org/
+
+/* Numbers with number signs refer to rubric items. Numbers without number
+signs refer to tutorial steps. */
+
+/* Steps 8-15 (#12, 25 pts) */
+
+/* Calendar table style (8 and 9) */
+
+table.calendar {
+	/* 8a */ border-collapse: separate;
+	         border-spacing: 5px;
+    /* 8b */ font-size: 8px;
+    /* 8c */ margin-top: 20px;
+             margin-bottom: 5px;
+             margin-left: auto;
+             margin-right: auto;
+    /* 8d */ padding: 40px;
+    /* 8e */ width: 650px;
+    /* 9  */ /* Image declaration order is arbitrary */
+    		 background: url(topleft.jpg) left top no-repeat, url(topright.jpg)
+    		 right top no-repeat, url(bottomleft.jpg) left bottom no-repeat,
+    		 url(bottomright.jpg) right bottom no-repeat, url(top.jpg) center
+    		 top repeat-x,
+    		 url(bottom.jpg) center bottom repeat-x, url(left.jpg) left center
+    		 repeat-y,
+    		 url(right.jpg) right center repeat-y;
+}
+
+/* Caption style (10) */
+
+table.calendar caption {
+	caption-side: top;
+	text-align: center;
+	/* 10a */ padding-bottom: 10px;
+	/* 10b */ font-size: 16px;
+	/* 10c */ letter-spacing: 3px;
+	/* 10d */ width: 650px;
+}
+
+/* Column styles (11) */
+
+table.calendar col {
+	width: 14%;
+}
+
+table.calendar col.weekends {
+	background-color: rgb(255, 232, 232);
+}
+
+/* Heading styles */
+
+/* Style for entire thead (12) */ 
+table.calendar thead {
+	background-color: red;
+	color: white;
+	letter-spacing: 5px;
+}
+
+/* Style for thead table row (13) */
+table.calendar thead tr {
+	height: 5%;
+}
+
+/* Table body styles */
+
+/* Style for tbody table rows (13) */
+table.calendar tbody tr {
+	height: 19%;
+}
+
+/* Style for table body cells (14) */
+table.calendar tbody td {
+	border: 1px solid gray;
+	vertical-align: top;
+}
+
+/* Style for h3 headings within table body cells (15) */
+table.calendar tbody h3 {
+	font-size: 8px;
+}
+
+/* Columnar layout of summary paragraph (16, #13, 12pts) with progressive
+enhancement*/
+section#summary div {
+	-moz-column-width: 300px;
+	-webkit-column-width: 300px;
+	column-width: 300px;
+	
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	column-gap: 20px;
+	
+	-moz-column-rule: 1px solid black;
+	-webkit-column-rule: 1px solid black;
+	column-rule: 1px solid black;
+	
+	/* Adding the vertical-align style will make the text appear not jagged
+	within the div (I hope) */
+	vertical-align: middle;
+}
+	

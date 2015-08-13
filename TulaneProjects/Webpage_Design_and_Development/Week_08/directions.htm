@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- 
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon 
+Date: 07/12/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the 
+	primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>Directions</title> 
+  <!--  charset attribute specifies the character encoding for 
+    	the HTML document (utf-8 = Unicode) 
+    	see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="ccc.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <header> 
+   <img src="ccc.jpg" alt="The Chamberlain Civic Center" /> 
+  </header> 
+  <!-- Extra nav bar contains links to assignment Web site home, KPAF, and the
+elements discussion --> 
+  <nav id="extra"> 
+   <ul> 
+    <li><a href="../">Stuart Simon's Assignment Web Site Home</a></li> 
+    <li><a href="schedule.htm">KPAF Schedule</a></li> 
+    <li><a href="elements.htm">Elements</a></li> 
+   </ul> 
+  </nav> 
+  <nav> 
+   <!-- An extra style rule in "ccc.css" will be defined to deal with items
+belonging to the "current" class --> 
+   <ul> 
+    <li><a href="home.htm">Home</a></li> 
+    <!-- Calendar link --> 
+    <li><a href="feb.htm">Events</a></li> 
+    <li><a href="boxoffice.htm">Box Office</a></li> 
+    <li><a href="facilities.htm">Facilities</a></li> 
+    <li class="current">Directions</li> 
+    <li><a href="contact.htm">Contact Us</a></li> 
+    <!-- Extra links --> 
+    <li><a href="links.htm">Links</a></li> 
+   </ul> 
+  </nav> 
+  <section class="bodytext"> 
+   <h1>Directions</h1> 
+   <p>Below is the location of the Lake Chamberlain Civic Center. Click the pin, and then click "View in Google Maps" to get dirving directions.</p> 
+   <iframe src="https://www.google.com/maps/d/embed?mid=zbQ2SeddTrn0.kXXwRQixWcdo" width="640" height="480"></iframe> 
+   <footer> 
+    <address> The Chamberlain Civic Center &nbsp;&nbsp;&nbsp; 2011 Canyon Drive &nbsp;&nbsp;&nbsp; Chamberlain, SD 53725 &nbsp;&nbsp;&nbsp; (605)555-8741 </address> 
+   </footer>  
+  </section>
+ </body>
+</html>

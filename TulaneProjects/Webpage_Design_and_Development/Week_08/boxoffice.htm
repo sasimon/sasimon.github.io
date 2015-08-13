@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- 
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon 
+Date: 07/12/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the 
+	primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>Box Office</title> 
+  <!--  charset attribute specifies the character encoding for 
+    	the HTML document (utf-8 = Unicode) 
+    	see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="ccc.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <header> 
+   <img src="ccc.jpg" alt="The Chamberlain Civic Center" /> 
+  </header> 
+  <!-- Extra nav bar contains links to assignment Web site home, KPAF, and the
+elements discussion --> 
+  <nav id="extra"> 
+   <ul> 
+    <li><a href="../">Stuart Simon's Assignment Web Site Home</a></li> 
+    <li><a href="schedule.htm">KPAF Schedule</a></li> 
+    <li><a href="elements.htm">Elements</a></li> 
+   </ul> 
+  </nav> 
+  <nav> 
+   <!-- An extra style rule in "ccc.css" will be defined to deal with items
+belonging to the "current" class --> 
+   <ul> 
+    <li><a href="home.htm">Home</a></li> 
+    <!-- Calendar link --> 
+    <li><a href="feb.htm">Events</a></li> 
+    <li class="current">Box Office</li> 
+    <li><a href="facilities.htm">Facilities</a></li> 
+    <li><a href="directions.htm">Directions</a></li> 
+    <li><a href="contact.htm">Contact Us</a></li> 
+    <!-- Extra links --> 
+    <li><a href="links.htm">Links</a></li> 
+   </ul> 
+  </nav> 
+  <section class="bodytext"> 
+   <h1>Box Office</h1> 
+   <p>Thank you for your interest at performances at the Chamberlain Civic Center! Our box office can be reached at (605) 555-8741, ext. 1234, Monday-Friday 8 AM to 5 PM, Central Time. You can also reach us beginning two hours before each performance.</p> 
+   <p>To purchase tickets online, please visit <a href="http://www.ticketmaster.com/">Ticketmaster</a>.</p> 
+  </section> 
+  <footer> 
+   <address> The Chamberlain Civic Center &nbsp;&nbsp;&nbsp; 2011 Canyon Drive &nbsp;&nbsp;&nbsp; Chamberlain, SD 53725 &nbsp;&nbsp;&nbsp; (605)555-8741 </address> 
+  </footer>  
+ </body>
+</html>

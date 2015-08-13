@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 08/02/2015
+Text editor: jEdit, http://www.jedit.org/
+-->
+<!-- according to the W3C I should declare the language (en=english) of my Web pages -->
+<html lang="en">
+ <head> 
+  <title>CAMshots Flower Photos</title> 
+  <!--  charset attribute specifies the encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for browsers that do not --> 
+  <script src="../../../../modernizr-latest.js"></script> 
+  <!-- links to external style sheet(s) go here --> 
+  <link type="text/css" rel="stylesheet" href="constyles.css" /> 
+ </head> 
+ <body> 
+  <header> 
+   <img usemap="#conlogo" alt="CAMshots" src="conlogo.jpg" /> 
+   <map name="conlogo"> <area alt="home page" href="camhome.htm" coords="86,82,80" shape="circle" /> <area alt="tip of the week" href="tipweek.htm" coords="222,120,310,161" shape="rect" /> <area alt="photo contest" href="contest.htm" coords="347,120,510,161" shape="rect" /> <area alt="photo glossary" href="photogloss.htm" coords="538,120,719,161" shape="rect" /> </map> 
+  </header> 
+  <nav> 
+   <ul> 
+    <li><a href="../../">Assignments Home</a></li> 
+    <li><a href="../">Week 12 Home</a></li> 
+    <li><a href="camhome.htm">Home</a></li> 
+    <li><a href="tipweek.htm">Tips</a></li> 
+    <li><a href="contest.htm">Contest</a></li> 
+    <li><a href="photogloss.htm">Glossary</a></li> 
+   </ul> 
+  </nav> 
+  <section class="full"> 
+   <img src="contest2.png" alt="" usemap="#contestmap" /> 
+   <map name="contestmap"> <area href="child.htm" shape="poly" coords="427,5,535,20,530,59,421,43" alt="Child Photos" /> <area href="flower.htm" shape="poly" coords="539,87,641,84,651,46,547,26" alt="Flower Photos" /> <area href="scenic.htm" shape="poly" coords="650,86,753,125,766,78,662,49" alt="Scenic Photos" /> </map> 
+   <h2 id="photo1">First Place: Lupine</h2> 
+   <p><img alt="flower3" src="flower1.jpg" /></p> 
+   <ul> 
+    <li>Submitted by: JGal03</li> 
+    <li>Shutter Speed: 1/100 sec.</li> 
+    <li>Focal Length: 32 mm.</li> 
+    <li>F-Stop Number: F/7</li> 
+   </ul> 
+   <h2 id="photo2">Second Place: Gaillardia</h2> 
+   <p><img alt="flower1" src="flower2.jpg" /></p> 
+   <ul> 
+    <li>Submitted by: Krys05</li> 
+    <li>Shutter Speed: 1/60 sec.</li> 
+    <li>Focal Length: 42 mm.</li> 
+    <li>F-Stop Number: F/5.3</li> 
+   </ul> 
+   <h2 id="photo3">Third Place: Mariposa Lily</h2> 
+   <p><img alt="flower2" src="flower3.jpg" /></p> 
+   <ul> 
+    <li>Submitted by: Babbers</li> 
+    <li>Shutter Speed: 1/60 sec.</li> 
+    <li>Focal Length: 55 mm.</li> 
+    <li>F-Stop Number: F/8</li> 
+   </ul> 
+  </section> 
+  <footer> 
+   <address> CAMshots ››› Advice and News from the World of Digital Photography</address> 
+  </footer>  
+ </body>
+</html>

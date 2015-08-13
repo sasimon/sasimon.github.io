@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 07/13/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the
+        primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>Customer Survey</title> 
+  <!--  charset attribute specifies the character encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!-- java script that validates the form (HTML 402) --> 
+  <script src="formsubmit.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="rb.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <header> 
+   <img src="redball.png" alt="Red Ball Pizza" /> 
+   <nav> 
+    <ul> 
+     <li><a href="#">home</a></li> 
+     <li><a href="#">menu</a></li> 
+     <li><a href="#">directions</a></li> 
+     <li><a href="#">coupons</a></li> 
+     <li><a href="#">orders</a></li> 
+     <li><a href="#">catering</a></li> 
+     <li><a href="#">reviews</a></li> 
+    </ul> 
+   </nav> 
+   <article> 
+    <h1>Customer Survey</h1> 
+    <p>Thank you for taking our customer survey. Your response helps Red Ball Pizza maintain the tradition that has made us the top-rated pizzeria in the metro area. </p> 
+    <p>All participants are automatically entered into a monthly drawing to receive a <em>Red Ball Express PizzaFest</em> containing two large pizzas, a 2-liter soda, and a side order of chicken wings. Check your e-mail inbox for contest results. </p> 
+    <p>Surveys are private and confidential. Red Ball Pizza will not share your contact information with third parties, <em>ever</em>. </p> 
+   </article> 
+  </header> 
+  <section> 
+   <p>Required values are marked by an asterisk (*)</p> \ 
+   <!-- Form (HTML 400)/attributes (HTML 401) --> 
+   <form id="survey" name="survey" action="http://www.redballpizza.com/cgi-bin/survey" method="post"> 
+    <!-- Field sets (HTML 403, top)/Legends (bottom)--> 
+    <fieldset id="custinfo"> 
+     <legend>Customer Information</legend> 
+     <!-- Customer information field boxes (HTML 406) / Labels (HTML 409)--> 
+     <label for="custname">Name *</label> 
+     <input name="custname" id="custname" /> 
+     <label for="street">Street address</label> 
+     <input name="street" id="street" /> 
+     <label for="city">City</label> 
+     <input name="city" id="city" /> 
+     <label for="state">State (abbr.)</label> 
+     <input name="state" id="state" /> 
+     <label for="zip">Postal code</label> 
+     <input name="zip" id="zip" /> 
+     <label for="phone">Phone number</label> 
+     <input name="phone" id="phone" /> 
+     <label for="email">E-mail *</label> 
+     <input name="email" id="email" /> 
+    </fieldset> 
+    <fieldset id="experience"> 
+     <legend>Share Your Experience at Red Ball Pizza</legend> 
+     <!-- Experience field boxes (HTML 407) / Labels (HTML 409) --> 
+     <label for="visitdate">Date of visit</label> 
+     <input name="visitdate" id="visitdate" /> 
+     <label for="receipt">Receipt number *</label> 
+     <input name="receipt" id="receipt" /> 
+    </fieldset> 
+   </form> 
+  </section> 
+  <footer> 
+   <address> Red Ball Pizza ? 811 Beach Drive ? Ormond Beach, FL 32175 ? (386) 555 - 7499 </address> 
+  </footer>   
+ </body>
+</html>

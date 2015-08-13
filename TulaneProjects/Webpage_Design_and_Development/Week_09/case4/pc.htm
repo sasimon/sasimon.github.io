@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 07/19/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the
+        primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>Order from Millennium Computers</title> 
+  <!--  charset attribute specifies the character encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../../modernizr-latest.js"></script> 
+  <!-- java script that processes the form --> 
+  <script src="formsubmit.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="mill.css" rel="stylesheet" type="text/css" /> 
+  <link href="oform.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <header> 
+   <img src="mclogo.jpg" alt="Millennium Computers" /> 
+   <h2>Computers for the New Millennium</h2> 
+  </header> 
+  <nav class="horizontal"> 
+   <ul> 
+    <li><a href="../../">Stuart Simon's Assignment Web Site Home</a></li> 
+    <li><a href="../tutorial/survey.htm">Red Ball Pizza Survey</a></li> 
+    <li><a href="../elements.htm">Elements</a></li> 
+   </ul> 
+  </nav> 
+  <section> 
+   <p>Welcome to Millennium Computers! We sell a wide range of desktop PCs. We specialize in computers for the home and office. If you need bulk purchases, please talk to one of our sales reps at (504) 555-8971.</p> 
+   <div id="orderForm"> 
+    <form id="cOrder" action="http://www.mill_computers.com/orders/process.cgi"> 
+     <fieldset id="contactInfo"> 
+      <!-- #9, 10pts: Input boxes --> 
+      <!-- #13, 2pts: Validation --> 
+      <legend>Customer Contact Information</legend> 
+      <label for="fname">First Name *</label> 
+      <input id="fname" name="fname" required="required" /> 
+      <label for="mi">Middle Initial</label> 
+      <!-- Not in text; not
+				required because not everybody has a middle name --> 
+      <input id="mi" name="mi" /> 
+      <label for="lname">Last Name *</label> 
+      <input id="lname" name="lname" required="required" /> 
+      <label for="street">Street Address *</label> 
+      <input id="street" name="street" required="required" /> 
+      <label for="street2">Apt/Suite</label> 
+      <!-- Not in text; not
+				required --> 
+      <input id="street2" name="street" /> 
+      <label for="city">City *</label> 
+      <input id="city" name="city" value="New Orleans" required="required" /> 
+      <label for="state">State (abbrev.) *</label> 
+      <input id="state" name="state" value="LA" required="required" /> 
+      <label for="zip">Zip Code *</label> 
+      <input id="zip" name="zip" pattern="^\d{5}(\-\d{4})?$" /> 
+      <label for="phone">Phone Number *</label> 
+      <input id="phone" name="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" /> 
+      <label for="email">E-mail Address *</label> 
+      <!-- Not in text but
+				required anyway --> 
+      <input id="email" name="email" type="email" required="required" /> 
+     </fieldset> 
+     <fieldset id="order"> 
+      <legend>Order Information</legend> 
+      <!-- #10, 7pts: Selection boxes --> 
+      <label for="pSpeed">Processor Speed</label> 
+      <select id="pSpeed" name="pSpeed" size="4"> <option value="3.2 GHz">3.2 GHz</option> <option value="3.4 GHz">3.4 GHz</option> <option value="4 GHz">4 GHz</option> <option value="5.2 GHz">5.2 GHz</option> </select> 
+      <label for="mem">Memory</label> 
+      <select id="mem" name="mem" size="4"> <option value="1 GB">1 GB</option> <option value="2 GB">2 GB</option> <option value="4 GB">4 GB</option> <option value="8 GB">8 GB</option> </select> 
+      <label for="monitor">Monitor Size</label> 
+      <select id="monitor" name="monitor" size="4"> <option value="15&quot;">15"</option> <option value="17&quot;">17"</option> <option value="19&quot;">19"</option> <option value="21&quot;">21"</option> </select> 
+      <label for="hd">Hard Drive Size</label> 
+      <select id="hd" name="hd" size="4"> <option value="240 GB">240 GB</option> <option value="500 GB">500 GB</option> <option value="750 GB">750 GB</option> <option value="1 TB">1 TB</option> </select> 
+      <label for="usbPorts">USB Ports on Tower/Block</label> 
+      <select id="usbPorts" name="usbPorts" size="3"> <option value="1">1</option> <option value="2">2</option> <option value="4">4</option> </select> 
+      <label for="orientation">Orientation</label> 
+      <select id="orientation" name="orientation" size="2"> <option value="tower">Vertical (Tower)</option> <option value="block">Horizontal (Block)</option> </select> 
+      <label for="os">Operating System</label> 
+      <select id="os" name="os" size="4"> <option value="windows">Windows</option> <option value="debian">Linux (Debian)</option> <option value="fedora">Linux (Fedora)</option> <option value="ubuntu">Linux (Ubuntu)</option> </select> 
+      <!-- #11, 3pts: Checkboxes. The DVD burner, tuner card, and card
+				reader are of this type and not option buttons because they are
+				not mutually exclusive. --> 
+      <label> <input type="checkbox" id="dvd" />Yes! I would like a <strong>DVD burner.</strong> </label> 
+      <label> <input type="checkbox" id="tuner" />Yes! I would like a <strong>tuner card</strong> installed. </label> 
+      <label class="checkbox"> <input type="checkbox" id="mCard" />Yes! I would like a <strong>media card reader.</strong> </label> 
+      <label class="checkbox"> <input type="checkbox" id="survey" checked="checked" />Yes! I would like to participate in a survey about my experience at Millennium Computers. </label> 
+      <label class="checkbox"> <input type="checkbox" id="subscribe" checked="checked" />Yes! Subscribe me to receive updates from Millennium Computers. </label> 
+      <label class="checkbox"> <input type="checkbox" id="partners" checked="checked" />Yes! Subscribe me to received updates from Millennium Computers' extensive network of partners. </label> 
+      <label for="comments">Additional comments:</label> 
+      <textarea name="comments" id="comments"></textarea> 
+      <!-- #12, 3pts: Buttons (contact button has no action) --> 
+      <input type="submit" value="Send Order" /> 
+      <input type="reset" value="Cancel Order" /> 
+      <input type="button" value="Contact Me" /> 
+     </fieldset> 
+    </form> 
+   </div> 
+  </section>   
+ </body>
+</html>

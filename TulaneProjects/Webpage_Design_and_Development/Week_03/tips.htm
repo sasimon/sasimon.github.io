@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- 
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: mm/dd/2015
+Text Editor:  jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the 
+	primary language (en = English) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>CAMshots Tips of the Week</title> 
+  <!--  charset attribute specifies the character encoding for 
+    	the HTML document (utf-8 = Unicode) 
+    	see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- Template continues --> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="camstyles.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body>
+  <header> 
+   <!-- HTML 108: To apply the logomap image map, step 1 --> 
+   <img src="camshots.jpg" alt="CAMshots" usemap="#logomap" /> 
+   <!-- HTML 107: To create an image map, step 2: in accordance with W3C, I removed spaces from coordinates --> 
+   <map name="logomap"> 
+    <!-- Step 3 --> <area shape="circle" coords="82,82,80" href="home.htm" alt="Home Page" /> 
+    <!-- Step 4 --> <area shape="rect" coords="235,120,310,150" href="tips.htm" alt="Tips" /> <area shape="rect" coords="340,120,510,150" href="glossary.htm" alt="Glossary" /> </map> 
+  </header> 
+  <!-- HTML 79: To create the navigation list, step 4: repeat step 2 --> 
+  <nav> 
+   <ul> 
+    <li> 
+     <!--link to home page--> <a href="http://cpst.tulane.edu/~ssimon6/cpst240010/">Stuart Simon's Home Page: All Assignments</a> </li> 
+   </ul> 
+   <ul> 
+    <!-- HTML 82: To create a hypertext link to a document, step 6: repeat step 2 --> 
+    <li> <a href="home.htm">Home</a> </li> 
+    <!-- Repeat step 3 --> 
+    <li> <a href="tips.htm">Tips</a> </li> 
+    <!-- Repeat step 4 --> 
+    <li> <a href="glossary.htm">Glossary</a> </li> 
+   </ul> 
+  </nav> 
+  <section class="full"> 
+   <h1>Tips of the Week</h1> 
+   <article> 
+    <h1>The Rule of Thirds</h1> 
+    <p> Good composition often results in good photographs, even of the most mundane subjects. There are several rules of thumb with respect to employing good composition. One of the most used is the <em>Rule of Thirds</em> . The Rule of Thirds is based on the observation that compositions in which the topic of interest is placed directly in the center of the frame tend to be static and uninteresting. </p> 
+    <p>A better approach is to imagine a grid drawn over your photograph that divides it into thirds, like a tic-tac-toe grid. Place your point of interest away from the center of the frame and onto one of the intersection points on the grid (see below). </p> 
+    <figure> 
+     <img src="thirds.jpg" alt="photo" /> 
+    </figure> 
+    <p>If you place points of interest into the thirds, your photo becomes more balanced and will enable the viewer to interact with it more naturally. Studies have shown that people's eyes are usually drawn to the location of the the intersection points in the grid rather than the center of the frame. The Rule of Thirds works with this natural way of viewing an image rather than against it. Many digital cameras allow the user to display the grid on the preview screen, making it easier to employ the Rule of Thirds directly before the shot is taken. </p> 
+   </article> 
+   <article> 
+    <h1>Photography Sites on the Web</h1> 
+    <p>The Web is an excellent resource for articles on photography and digital cameras. Here are a few of my favorites. </p> 
+    <dl> 
+     <!-- HTML 112: To create links to sites on the Web, step 3 --> 
+     <!-- target="new": HTML 116, To specify a link target, step 3 --> 
+     <dt>
+       ? 
+      <a href="http://www.apogeephoto.com" target="new">Apogee Photo</a> 
+     </dt> 
+     <dd>
+       An established online photography magazine with articles by top pros, discussion forums, workshops, and more. 
+     </dd> 
+     <!-- HTML 112, Step 4 --> 
+     <dt>
+       ? 
+      <a href="http://www.outdoorphotographer.com" target="new">Outdoor Photographer</a> 
+     </dt> 
+     <dd>
+       The premier magazine for outdoor photography. The site includes extensive tips on photographing wildlife, action sports, scenic vistas, and travel sites. 
+     </dd> 
+     <dt>
+       ? 
+      <a href="http://www.dpmag.com" target="new">Digital Photo</a> 
+     </dt> 
+     <dd>
+       An excellent site for novices and professionals with informative reviews and buying guides for the latest equipment and software. 
+     </dd> 
+     <dt>
+       ? 
+      <a href="http://www.popphoto.com" target="new">Popular Photography and Imaging</a> 
+     </dt> 
+     <dd>
+       A useful and informative site with articles from the long-established magazine of professional and amateur photographers. 
+     </dd> 
+    </dl> 
+   </article> 
+  </section> 
+  <footer> 
+   <address> CAMshots ››› Advice and News from the World of Digital Photography </address> 
+  </footer>  
+ </body>
+</html>

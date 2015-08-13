@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 07/19/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the
+        primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>Elements of Form Design</title> 
+  <!--  charset attribute specifies the character encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="../home_styles.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <nav> 
+   <ul> 
+    <li><a href="../">Stuart's Assignment Web Site Home</a></li> 
+    <li><a href="tutorial/survey.htm">Red Ball Pizza</a></li> 
+    <li><a href="case4/pc.htm">Millennium PC</a></li> 
+   </ul> 
+  </nav> 
+  <section> 
+   <h1>The Elements of Form Design</h1> 
+   <p>The main idea in designing forms is to make them easy to use for the users. I considered that a form should be easy to read by separating the content into discrete blocks. To me, this was better than the jumble of text and fields that I saw when I first loaded Millennium Computers' Web page into my Web browser.</p> 
+   <p>As for the elements themselves, I feel that the tabular layout imitated by floating the elements left and right does justice. I mean the ayout that floats the labels left and the fields right. Most people consider a "tabular" layout to refer to a datasheet that can display multiple records, but a Web site form cannot do that. It is mainly to submit a single record.</p> 
+   <p>The only other thing I feel the need to say is that I elected not to have any in-line validation in my code. It is not that it is not part of the CSS3 standard. It is in fact part of the standard, but the W3C CSS Validator does not recognize the :required, :valid, and :invalid pseudo-classes. Next semester I will learn JavaScript as it relates to Web design, and it will help me imitate the valid/invalid pseudo-class events. But for now, I just have to do without it.</p> 
+  </section>   
+ </body>
+</html>

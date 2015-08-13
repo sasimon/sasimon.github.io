@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 07/12/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the
+        primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>some_sort_of_name_or_the_other</title> 
+  <!--  charset attribute specifies the character encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="ccc.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <!-- "Extra" nav bar (class identifies style rule) contains links to assignment
+Web site home and KPAF radio and Chamberlain --> 
+  <nav id="extra"> 
+   <ul> 
+    <li><a href="../">Stuart Simon's Assignment Web Site Home</a></li> 
+    <li><a href="schedule.htm">KPAF Radio</a></li> 
+    <li><a href="home.htm">Chamberlain Chamber of Commerce</a></li> 
+   </ul> 
+  </nav> 
+  <section class="bodytext"> 
+   <p>Because I had to design an entire Web site, the most challenging thing about this week was knowing that I was dealing with a fictional entity. This came to the front in two places.</p> 
+   <p>First, the links on the Calendar Web Page do not always link to the described entity. I knew that in order to make the grade, I needed to make some of the links on the pages whose links were already in the tutorial-warranted nav bar. I decided to cash in on that by converting the names in the introductory paragraph to the calendar to external links. I knew that the actual acts mentioned were fictional, yet I also knew that if designing a Web site for a real performing arts organization, the names of the performers would be linked in running text. So I stand by my decision to link the names.</p> 
+   <p>Second, the location indicated on the Directions page is obviously not on Canyon Drive. I actually mapped out Chamberlain, and the closest thing to a Canyon Drive is a Canyon Road in a rural area. It is not a suitable location for a civic center. I very carefully used Google Maps to mask a location as the Chamberlain Civic Center. Because I used the Google Maps API on a custom map, users must take the extra step of right clicking the pin to get driving directions. I favor credibility over usability, and this was the least I could do to mask the fact that the Chamberlain Civic Center is fiction.</p> 
+   <p>There is very little to say otherwise other than that I did end up using material from all the chapters so far in my final design. I found a suitable image for a splash home page, and I wanted to overlay text on it at the bottom. I wound up using something I had nearly forgotten: the quirks of absolute and relative positioning. I positioned one block element relative and then positioned its contents absolutely inside it. You will see this in my CSS rules. I also carefully engineered the CSS to get the columns in the two-column layout to line up evenly. This was tested in both Firefox and Chrome.</p> 
+  </section>   
+ </body>
+</html>

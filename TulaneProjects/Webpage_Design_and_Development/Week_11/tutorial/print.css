@@ -1,0 +1,68 @@
+/*
+    HTML and CSS 6th Edition: Comprehensive
+    Author: Stuart Simon
+    Date: 07/26/2015
+    Text Editor: jEdit, http://www.jedit.org/
+    /*
+
+/* Styles to be used for print displays */
+
+/* Page style (HTML 297) */
+
+@page {
+	size: 8.5in 11in; /* "portrait" omitted as per W3C */
+	margin: 0.5in;
+}
+
+/* Hide the page elements that will not be printed (HTML 593) */
+
+header, nav, footer {
+	display: none;
+}
+
+/* Setting the page breaks in the document (HTML 601) */
+
+article {
+	display: block;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+/* Setting the contents of the first page (HTML 602, top) */
+
+/* Styles for the h1 heading */
+
+h1 {
+	font-size: 28pt;
+	text-align: center;
+	width: 100%
+}
+
+/* Styles for the main photo */
+
+#photo1 {
+	display: block;
+	margin: 0in auto;
+	width: 4in;
+}
+
+/* Styles for the figure boxes (HTML 602, bottom) */
+
+figure {
+	display: block;
+	text-align: center;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+figure img {
+	width: 5in;
+}
+
+figure figcaption {
+	font-size: 20pt;
+}
+
+figure:last-of-type {
+	page-break-after: avoid;
+}

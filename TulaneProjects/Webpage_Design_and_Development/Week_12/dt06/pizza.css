@@ -1,0 +1,139 @@
+/*
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 08/02/2015
+Text editor: jEdit, http://www.jedit.org/
+*/
+
+/* Form styles */
+
+/* Styles for fieldsets */
+
+fieldset {
+	background-color: rgb(255,246,205);
+	border: 1px solid rgb(233,69,0);
+	float: left;
+	margin: 1%;
+}
+
+#custInfo {
+	width: 35%;
+}
+
+#buildPizza {
+	width: 60%;
+}
+
+#meat, #vegetables {
+	width: 47%;
+	background-color: rgb(247,178,74);
+}
+
+/* Styles for fieldset legends */
+
+legend {
+	font-size: 0.9em;
+}
+
+/* Styles for labels */
+
+label {
+	display: block;
+	float: left;
+	clear: left;
+	width: 40%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+
+/* Styles for form elements */
+
+input{
+	display: block;
+	float: left;
+	width: 50%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+textarea {
+	display: block;
+	float: left;
+	width: 50%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+}
+
+#delTime {
+	width: 150px;
+}
+
+#size {
+	width: 200px;
+	background-color: inherit;
+}
+
+#crust {
+	display: block;
+	float: left;
+	font-size: 0.8em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 150px;
+}
+
+#quantity {
+	width: 40px;
+}
+
+.optionGroup {
+	border: 0px;
+	background-color: inherit;
+}
+
+input[type=radio] {
+	width: 30px;
+}
+
+input[type=checkbox] {
+	width: 20px;
+}
+
+input[type=submit] {
+	width: 150px;
+	float: none;
+	margin: 0px auto;
+}
+
+/* Inline validation */
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(220, 255, 220);
+}
+
+input:valid:focus {
+	background: rgb(220, 255, 220) url(okay.png) bottom right no-repeat;
+	background-size: contain
+}
+
+input:invalid:focus {
+	background: rgb(255,232,233) url(warning.png) bottom right no-repeat;
+	background-size: contain;
+}
+
+
+/* Styles for images within the form */
+
+form img {
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#sizeimage {
+	margin-left: 40%;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE  html>
+
+<!--
+    HTML and CSS 6th Edition: Comprehensive
+    Author: Stuart Simon
+    Date: 07/27/2015
+    Text Editor: jEdit, http://www.jedit.org/
+    -->
+
+<!--  according to the W3C recommendation I should declare the 
+	primary language (en = english) of my WebPages -->
+<html lang="en">
+
+<head>
+
+
+    <title>some_sort_of_name_or_the_other</title>
+
+    <!--  charset attribute specifies the character encoding for 
+    	the HTML document (utf-8 = Unicode) 
+    	see http://www.unicode.org/standard/WhatIsUnicode.html -->
+    <meta charset="utf-8"/>
+
+    <!-- java script that supports HTML5 for Browsers that do not -->
+    <script src="http://www.tulane.edu/~gnorth/modernizr.js"></script>
+
+
+    <!--  link(s) to a external style sheet(s) go here -->
+    <link href="../home.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+
+<nav>
+	<ul>
+		<li><a href="../">CPST 2400 Home</a></li>
+		<li><a href="tutorial/treebook.htm">Tree and Book</a></li>
+		<li><a href="case1/">DessertWEB</a></li>
+	</ul>
+</nav>
+
+<section>
+	<h1>Elements</h1>
+	<p>It was difficult designing this week's Web sites. I was fond for the most
+	part of what the book put in front of me, though I am partly motivated by
+	the challenge of doing something that doesn't look exactly like one out of
+	the book. I know that some people took their original DessertWEB page from
+	Tutorial 2 as a starting point, but I decided to use the new one and change
+	it subtly.</p>
+	
+	<p>The subtlest of the differences was even required by our assignment: to
+	have at least one rotated page element. Really, the only thing suitable for
+	that purpose is the image of the product itself, so I rotated it 5 degrees.
+	I tried 30 degrees, but it was interfering with the text and looked
+	unappetizing when knocked too much out of alignment. The other ways I
+	changed the appearance was to opt for a red inset border in the main page
+	element instead of the outset border the book's exercise required, and to
+	use a rainbow gradient in the reviews. I figured it was wild, and I wanted
+	to see if it was possible. Indeed it was.</p>
+	
+	<p>Speaking of gradients, this is where I differed the most from the book's
+	exercise. I wanted to make sure I created a unique experience as much as
+	possible across browsers. So I ignored the injunction to use browser
+	extensions to create <em>different</em> effects in browsers, but I did
+	invoke them in my CSS, albeit to create the same effect. Due to the time
+	lapse between the book's publication and now and the release of Internet
+	Explorer 10 in the interim, I doubted that anybody would be able to view my
+	Web site on anything that does not support something close to the CSS3
+	gradient rules. Therefore, using the Filter = Gradient(... syntax required
+	by old versions of IE, whose syntax violates W3C's CSS syntax rules of not
+	having an equal sign in parentheses, did not seem worth my trouble.</p>
+	
+	<p>To deal with different media is fun, and I hope to do more with this in
+	the final exam, and in my upcoming projects outside of class.</p>
+
+
+</body>
+</html>

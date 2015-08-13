@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+HTML and CSS 6th Edition: Comprehensive
+Author: Stuart Simon
+Date: 07/07/2015
+Text Editor: jEdit, http://www.jedit.org/
+-->
+<!--  according to the W3C recommendation I should declare the
+        primary language (en = english) of my WebPages -->
+<html lang="en">
+ <head> 
+  <title>KPAF Radio Nightly Schedule</title> 
+  <!--  charset attribute specifies the character encoding for
+             the HTML document (utf-8 = Unicode)
+             see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="kpaf.css" rel="stylesheet" type="text/css" /> 
+  <link href="tables.css" rel="stylesheet" type="text/css" /> 
+ </head> 
+ <body> 
+  <header> 
+   <h1> | Listener supported <em>since</em> 1966 </h1> 
+   <!-- Extra nav bar contains links to assignments home page (#8, 5pts),
+ Chamberlain web site, and elements discussion (#14) --> 
+   <nav class="extra"> 
+    <ul> 
+     <li> <a href="../">Stuart Simon's Assignment Web Site Home</a> </li> 
+     <li> <a href="home.htm">Chamberlain Civic Center</a></li> 
+     <li> <a href="elements.htm">Elements</a> </li> 
+    </ul> 
+   </nav> 
+   <nav> 
+    <ul> 
+     <li> <a href="#">Home</a> </li> 
+     <li> <a href="#">Schedule</a> </li> 
+     <li> <a href="#">Programs</a> </li> 
+     <li> <a href="#">Music</a> </li> 
+     <li> <a href="#">News</a> </li> 
+     <li> <a href="#">Events</a> </li> 
+     <li> <a href="#">Listen Live</a> </li> 
+     <li> <a href="#">Contact Us</a> </li> 
+     <li> <a href="#">Support KPAF</a> </li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <section id="main"> 
+   <div class="hgroup"> 
+    <h1> <img src="kpaf.jpg" alt="KPAF" /> </h1> 
+    <h2>KPAF Nightly Schedule</h2> 
+   </div> 
+   <p> KPAF airs listener-supported public radio in Bismarck, North Dakota from 5:00 a.m. to 10:30 p.m. <br /> You can <a href="#">Listen Live</a> to streaming audio of our broadcast. Please refer below for our current nightly schedule. </p> 
+   <!-- summary="This table contains the nightly KPAF program schedule 
+aired from Bismarck, North Dakota. Program times are laid 
+out in thirty-minute increments from 6:00 p.m. to
+10:00 p.m., Monday through Sunday night." <- - Summary attribute is obsolete.
+--> 
+   <!-- Cell spacing and padding, HTML 247 --> 
+   <table class="schedule"> 
+    <!-- Table caption indicating time zone --> 
+    <caption>
+     All Times Central
+    </caption> 
+    <!-- Column groups (HTML 340) --> 
+    <colgroup> 
+     <col class="firstCol" /> 
+     <col class="dayCols" span="7" /> 
+    </colgroup> 
+    <!-- Row groups thead and tbody; tfoot not present --> 
+    <thead> 
+     <tr> 
+      <th>Time</th> 
+      <th>Monday</th> 
+      <th>Tuesday</th> 
+      <th>Wednesday</th> 
+      <th>Thursday</th> 
+      <th>Friday</th> 
+      <th>Saturday</th> 
+      <th>Sunday</th> 
+     </tr> 
+    </thead> 
+    <!-- Text is vertically aligned, HTML 351 --> 
+    <tbody> 
+     <tr> 
+      <th>6:00</th> 
+      <!-- Cell spans 7 columns using colspan attribute --> 
+      <td colspan="7">National News</td> 
+     </tr> 
+     <tr> 
+      <th>6:30</th> 
+      <td colspan="7">Local News</td> 
+     </tr> 
+     <!-- Spanning several rows --> 
+     <tr> 
+      <th>7:00</th> 
+      <td rowspan="2">Opera Fest</td> 
+      <td rowspan="2">Radio U</td> 
+      <td rowspan="2">Science Week</td> 
+      <td rowspan="2">The Living World</td> 
+      <td>Word Play</td> 
+      <td>Agri-Week</td> 
+      <td rowspan="2">Folk Fest</td> 
+     </tr> 
+     <tr> 
+      <th>7:30</th> 
+      <td>Brain Stew</td> 
+      <td>Bismarck Forum</td> 
+     </tr> 
+     <!-- Spanning several rows AND columns --> 
+     <tr> 
+      <th>8:00</th> 
+      <td colspan="4" rowspan="4">The Classical Music Connection</td> 
+      <td>Old Time Radio</td> 
+      <td rowspan="4">Saturday Nite Jazz</td> 
+      <td rowspan="4">The Indie Connection</td> 
+     </tr> 
+     <tr> 
+      <th>8:30</th> 
+      <td>The Inner Mind</td> 
+     </tr> 
+     <tr> 
+      <th>9:00</th> 
+      <td rowspan="2">Open Mike Nite</td> 
+     </tr> 
+     <!--No programs start at 9:30, but I include the time anyway --> 
+     <tr> 
+      <th>9:30</th> 
+     </tr> 
+     <tr> 
+      <th>10:00</th> 
+      <td colspan="7">World News Feed</td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </section> 
+  <aside id="current"> 
+   <h1>On the Air Now</h1> 
+   <h2>Folk Fest </h2> 
+   <p>Featuring the best of traditional and contemporary folk music </p> 
+  </aside> 
+  <aside id="future"> 
+   <h1>Coming Up on KPAF</h1> 
+   <h2> April 11-14 <br /> The Classical Music Connection </h2> 
+   <p>Peter Thiesen shares his eclectic selection from the world of classical music </p> 
+   <h2> April 11 <br /> Opera Fest </h2> 
+   <p> Excerpts from <em>Turandot</em> by Giacomo Puccini </p> 
+   <h2> April 12 <br /> Radio U </h2> 
+   <p> Novelist Karen Graves reads from her latest work, <i>Hellion of Troy</i> </p> 
+   <h2> April 13 <br /> Science Week </h2> 
+   <p> Prof. Thomas Glass from UND discusses <em>String Theory and Spooky Action at a Distance</em> </p> 
+   <h2> April 14 <br /> The Living World </h2> 
+   <p> A panel discussion on the <em>Return of the Electric Car</em> and the latest in eco-news </p> 
+  </aside> 
+  <footer> 
+   <address> KPAF · 4300 Magnolia Lane · Bismarck, ND 58504 · (701) 555 - 5611 </address> 
+  </footer>   
+ </body>
+</html>

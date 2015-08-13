@@ -1,0 +1,171 @@
+/*
+   HTML and CSS 6th Edition: Comprehensive
+   Author: Stuart Simon 
+   Date: 07/04/2015   
+
+   Filename:         cp_styles.css
+   Supporting Files: atwood.png, bike_bg.png, rawlings.png
+
+
+   Text editor: jEdit, http://www.jedit.org/
+*/
+
+/* Styles for the Page Body */
+/* HTML 235 */
+
+body {
+	background: black url(bike_bg.png) top left no-repeat;
+	/* HTML 241 */
+	width: 95%;
+	min-width: 1000px;
+	max-width: 1400px;
+}
+
+/* Begin HTML 244 */
+/* General Navigation List Style */
+
+nav a {
+	text-decoration: none;
+}
+
+/* Horizontal Navigation List */
+
+/* Begin HTML 255 (margin rule) */
+
+nav.horizontalNAV {
+	margin-left: 33%;
+	width: 66%
+}
+
+/* End HTML 255 */
+
+nav.horizontalNAV li {
+	font-size: 87%;
+	float: left;
+	text-align: center;
+	width: 20%;
+	padding: 15px 0px; /* padding style rule (HTML 256) */
+}
+
+nav.horizontalNAV li a {
+	color: rgb(255,255,99);
+}
+
+nav.horizontalNAV li a:hover {
+	color: white;
+}
+
+/* End HTML 244 */
+
+/* Begin HTML 247 */
+
+/* President's Message */
+
+#president {
+	background-color: rgb(105, 96, 87);
+	background-color: rgba(255, 255, 255, 0.3);
+	clear: left;
+	float: left;
+	margin-left: 33%; /* another margin rule (HTML 255) */
+	width: 40%;
+/* Begin HTML 258 (setting the background image) */
+	background-image: url(atwood.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	
+	-o-background-size: 40%; /* specific to Presto-based browsers (e.g., Opera) */
+	-moz-background-size: 40%; /* specific to Gecko-based browsers (e.g., Firefox) */
+	-webkit-background-size: 40%; /* specific to Webkit-based browsers (e.g., Chrome, Safari) */
+	background-size: 40%; /* fallback rule if browsers do not match any of the above */
+/* End HTML 258 */
+/* Begin HTML 269 (setting radius of rounded borders */
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+/* End HTML 269 */
+}
+
+/* End HTML 247 */
+
+/* Begin HTML 257 */
+
+#president h1 {
+	font-family: 'Lucida Calligraphy', 'Apple Chancery', cursive;
+	font-size: 158%;
+	font-weight: bold;
+	margin: 10px 0px 0px 10px;
+}
+
+#president h2 {
+	font-size: 105%;
+	margin: 0px 0px 10px 15px;
+}
+
+/* End HTML 257 */
+
+/* Begin HTML 258 (preparing for background image) */
+
+#president p {
+	font-size: 87.5%;
+	margin: 0px 40% 20px 15px;
+}
+
+/* End HTML 258 */
+
+/* Begin HTML 259 */
+
+/* Vertical navigation list */
+
+nav.verticalNAV {
+	float: left;
+	margin-left: 3%;
+	width: 23%;
+}
+nav.verticalNAV a {
+	color: rgb(182, 182, 92);
+	line-height: 2.2em;
+	/* Begin HTML 265 (setting of borders and adding hover style rule) */
+	border-bottom: 1px solid rgb(182, 182, 92);
+	display: block;
+}
+
+nav.verticalNAV a:hover {
+	background-color: rgb(105, 96, 87);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* End HTML 259 */
+
+/* HTML 273 (setting outline to view page elements) 
+* {
+	outline: 1px solid red;
+}
+*/
+
+/* Begin HTML 273 */
+
+/* Story section styles */
+
+#story {
+	background-color: gray;
+	background-color: rgba(255, 255, 255, 0.8);
+	clear: left;
+	float: left;
+	margin: 20px 0px 0px 33%;
+	width: 66%;
+}
+
+/* Article styles */
+
+#story article {
+	border-right: 1px solid black;
+	float: left;
+	width: 50%;
+}
+
+/* Figure box styler */
+
+#story figure {
+	float: left;
+	width: 49%;
+}

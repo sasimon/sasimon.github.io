@@ -1,0 +1,133 @@
+/*
+   HTML and CSS 6th Edition: Comprehensive
+   Author: Stuart Simon 
+   Date: 07/04/2015   
+
+   Filename:         history.css
+   Supporting Files: 
+
+
+   Text editor: jEdit, http://www.jedit.org/
+*/
+
+/* Default margin and padding space for all elements is 0 (HTML case item #4).
+As I understand it, this is a default style rule, and it is why there is no
+separate reset stylesheet created for this assignment. */
+
+body * {
+	margin: 0px;
+	padding: 0px;
+	color: black; /* I inserted this because Google Chrome was displaying text
+	in gray, a color it had inherited from the h1 element */
+}
+
+/* Display header, section, and nav as blocks (item 13, 1pt) */
+header, section, nav {
+	display: block;
+}
+
+/* Center header contents and change background color and width */
+
+header {
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgb(51, 51, 51);
+	width: 55em;
+}
+
+/* Header inline image height is 4 em */
+
+header img {
+	height: 4em;
+}
+
+/* Float the navigation list (item 14, 1pt) */
+
+nav {
+	float: left;
+	background-color: rgb(51, 51, 51);
+}
+
+/* Set properties of list items within the nav bar */
+
+nav ul li {
+	font-family: "Century Gothic", sans-serif;
+	font-size: 0.7em;
+	list-style: none; /* removes list markers */
+	line-height: 1.4em;
+	margin-left: 1em;
+	margin-bottom: 1.2em;
+}
+
+/* Set properties of links in nav bar list items (item 15, 1pt) */
+
+nav ul li a {
+	color: rgb(212, 212, 212);
+	text-decoration: none; /* removes underline from links */
+}
+
+nav ul li a:hover {
+	color: white;
+}
+
+/* Property of nav bar element referring to current page */
+nav ul li strong {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+/* Speech section properties */
+
+section{
+	color: rgb(212, 212, 212);
+	width: 40em;
+	float: left;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+/* Properties of the h1 element within the speech section */
+section h1 {
+	background-color: rgb(51, 51, 51);
+	color: rgb(212, 212, 212);
+	font-size: 2em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* Properties of paragraphs within the speech section */
+section p {
+	font-size: 0.9em;
+	margin: 1em;
+}
+
+/* Drop cap (item 16, 1pt) */
+
+section p:first-of-type::first-letter {
+	float: left;
+	font-size: 4em;
+	line-height: 0.8em;
+	margin-right: 0.3em;
+	padding-right: 0.2em;
+	padding-bottom: 0.2em;
+	border-bottom-style: solid;
+	border-bottom-width: 0.02em;
+	border-right-style: solid;
+	border-right-width: 0.02em;
+}
+
+/* First line of speech uppercase (does not work in Webkit-based browsers) */
+
+section p:first-of-type::first-line {
+	text-transform: uppercase;
+}
+
+/* Assemble Lincoln's portrait and create irregular line wrap (item 17, 1pt) */	
+
+section p img {
+	float: right;
+	clear: right;
+	height: 4em;
+}
+
+
+

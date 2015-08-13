@@ -1,0 +1,114 @@
+/*
+    HTML and CSS 6th Edition: Comprehensive
+    Author: Stuart Simon
+    Date: 07/27/2015
+    Text Editor: jEdit, http://www.jedit.org/
+    /*
+
+/* #7, 30pts, dweffects.css */
+
+/* (1) Shadow effects */
+
+body { /* (3) Blurred and (2) semi-transparent */
+	-moz-box-shadow: inset rgba(211,0,211,0.5)  10px 0px 15px, inset
+	rgba(211,0,211,0.5) -10px 0px 15px;
+	-webkit-box-shadow: inset rgba(211,0,211,0.5) 10px 0px 15px, inset
+	rgba(211,0,211,0.5) -10px 0px 15px;
+	box-shadow: inset rgba(211,0,211,0.5) 10px 0px 15px, inset
+	rgba(211,0,211,0.5) -10px 0px 15px;
+}
+
+nav.horizontal ul li { /* Also (3) blurred */
+	background-color: rgb(224,238,238);
+	
+	-moz-box-shadow: inset white 3px 3px 2px, inset rgb(147,147,207) -5px -5px
+	5px;
+	-webkit-box-shadow: inset white 3px 3px 2px, inset rgb(147,147,207) -5px -5px
+	5px;
+	box-shadow: inset white 3px 3px 2px, inset rgb(147,147,207) -5px -5px 5px;
+}
+
+article {
+	-moz-box-shadow: inset rgb(171,171,171) -15px -15px 75px, rgb(101,101,101)
+	5px 5px;
+	-webkit-box-shadow: inset rgb(171,171,171) -15px -15px 75px, rgb(101,101,101)
+	5px 5px;
+	box-shadow: inset rgb(171,171,171) -15px -15px 75px, rgb(101,101,101)
+	5px 5px;
+}
+
+/* (4) Horizontal gradient: same gradient will be applied to Webkit and, as much as
+possible, to IE */
+
+blockquote {
+	background-image: -moz-linear-gradient(left, red, green 50%, blue 100%);
+	background-image: -webkit-linear-gradient(left, red, green 50%, blue 100%);
+	background-image: -webkit-gradient(linear, left center, right center, red,
+	green 50%, blue 100%); /* older versions of Chrome */
+	background-image: -ms-linear-gradient(left, red, green 50%, blue 100%); /*
+	IE 10+ */
+	background-image: linear-gradient(red, green 50%, blue 100%);
+}
+
+/* (5) Rotating the torte image */
+
+#dishimg {
+	-moz-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+/* Style for items in the links page that do not show up on screen */
+
+section.links ul li {
+	list-style: none;
+}
+
+section.links ul li a {
+	background: -moz-linear-gradient(left, black, blue 100%);
+	background: -webkit-linear-gradient(left, black, blue 100%);
+	background: -webkit-gradient(linear, left center, right center, black, blue
+	100%);
+	background: -ms-linear-gradient(left, black, blue 100%);
+	background: linear-gradient(left, black, blue 100%);
+	color: white;
+	text-decoration: none;
+}
+
+section.links ul li a:visited {
+
+}
+
+section.links ul li a:hover {
+	background: -moz-linear-gradient(left, black, green 100%);
+	background: -webkit-linear-gradient(left, black, green 100%);
+	background: -webkit-gradient(linear, left center, right center, black, green
+	100%);
+	background: -ms-linear-gradient(left, black, green 100%);
+}
+
+section.links ul li a:active {
+	background: -moz-linear-gradient(left, black, red 100%);
+	background: -webkit-linear-gradient(left, black, red 100%);
+	background: -webkit-gradient(linear, left center, right center, black, green
+	100%);
+	background: -ms-linear-gradient(left, black, red 100%);
+}
+
+section.links span {
+	display: none;
+}
+
+/* Home page styles */
+
+section.home {
+	background-color: red;
+	background-image:
+	url(http://cdn-media-2.lifehack.org/wp-content/files/2013/11/20-Easy-And-Amazingly-Tasty-Dessert-Recipes-380x213.jpg) cover;
+	font-size: 72pt;
+}
+	
+
+
