@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test of outerXHTML</title>
+		<meta charset="utf-8" />
+		<script src="jquery-2.1.4.min.js"></script>
+		<script src="innerxhtml.js"></script>
+		<script src="template.js"></script>
+	</head>
+	<body>
+		<form onsubmit="return false">
+			<select id="doctype" name="doctype">
+				<option value="HTML 2.0">HTML 2.0</option>
+				<option value="HTML 3.2">HTML 3.2</option>
+				<option value="HTML 4.01 strict">HTML 4.01 strict</option>
+				<option value="HTML 4.01 transitional">HTML 4.01 transitional</option>
+				<option value="HTML 4.01 frameset">HTML 4.01 frameset</option>
+				<option value="HTML5" selected="selected">HTML5</option>
+				<option value="XHTML 1.0 strict">XHTML 1.0 strict</option>
+				<option value="XTHML 1.0 transitional">XHTML 1.0 transitional</option>
+				<option value="XHTML 1.0 frameset">XHTML 1.0 frameset</option>
+				<option value="XHTML 1.1">XHTML 1.1</option>
+				<option value="XHTML5">XHTML5</option>
+			</select>
+			<textarea id="inputHTML" name="inputHTML">Input HTML here...</textarea>
+			<input type="submit" value="Templatize!"/>
+			<textarea id="output" name="output">Output will be here...</textarea>
+			<label>CSS Output:
+			<textarea name="css" id="css"></textarea>
+			</label>
+		</form>
+		<script type="text/javascript">
+		// function parseHTML(sText) {
+// var str = "<!DOCTYPE><html><head><title>Hello world!</title></head><body></body></html>";
+// return  tempDom = $('<div></div>').append($.parseHTML(str));
+// $("#output").val(tempDom.find('title').text());
+		// }
+		$("form").submit(function(event) {
+				event.preventDefault();
+				template();
+		}
+		);
+		$(document).ready(function() {
+				var now = new Date();
+				$("#css").val("/*\n" +
+					"HTML and CSS 6th Edition: Comprehensive\n" +
+					"Author: Stuart Simon\n" +
+					"Date: " + (now.getMonth() < 9 ? "0" : "") + (now.getMonth() + 1) + "/" + (now.getDate() < 10 ? "0" : "") + now.getDate() + "/" + now.getFullYear() + "\n" +
+					"Text editor: jEdit, http://www.jedit.org/\n" +
+					"*/");
+		});
+		</script>
+			
+	</body>
+</html>
