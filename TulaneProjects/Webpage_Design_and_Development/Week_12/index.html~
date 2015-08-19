@@ -7,44 +7,36 @@ Text editor: jEdit, http://www.jedit.org/
 -->
 <!-- according to the W3C I should declare the language (en=english) of my Web pages -->
 <html lang="en">
-<head>
-     <title>Design Topic Splash Page: Designing Web Pages with XHTML</title>
-     <!--  charset attribute specifies the encoding for
+ <head> 
+  <title>Design Topic Splash Page: Designing Web Pages with XHTML</title> 
+  <!--  charset attribute specifies the encoding for
              the HTML document (utf-8 = Unicode)
-             see http://www.unicode.org/standard/WhatIsUnicode.html -->
-     <meta charset="utf-8" />
-     <!-- java script that supports HTML5 for browsers that do not -->
-     <script src="http://www.tulane.edu/~gnorth/modernizr.js"></script>
-     <!-- links to external style sheet(s) go here -->
-     <link type="text/css" rel="stylesheet" href="../home_styles.css" />
-
-</head>
-<body>
-
-<nav>
-	<ul>
-		
-		<li><a href="dt01/basic.htm">The Structure of HTML5</a></li>
-		<li><a href="dt02/contest.htm">Web Site Development</a></li>
-		<li><a href="dt03/holiday.htm">Styling with CSS</a></li>
-		<li><a href="dt04/rose.htm">The Physical Layout of Web Pages</a></li>
-		<li><a href="dt05/morning.htm">Tables</a></li>
-		<li><a href="dt06/pizza.htm">Web Forms</a></li>
-		<li><a href="dt09/tutorial/works.htm">Wizard Works</a></li>
-	</ul>
-</nav>
-
-<section id="main">
-<h1>Final Elements, Final Thoughts</h1>
-<p>How to approach the final exam, a collection of Design Topics based on all that I had learned, was a difficult decision. Although I was told I could recycle assignments, I thought it defeated the purpose of demonstrating what I had learned. I knew that there were other convenient methods to approach design topics in the text, so I decided to do additional work. What I ended up doing was the first six Review Exercises from Tutorials 1-6. That and the XHTML tutorials make up the seven requisite Design Topics. Of course all have their own stylesheets.</p>
-
-<p>The Design Topics in the nav bar on this page are listed by their topic rather than their content, but the topics are in order of what I had learned. The Review Exercises tie in to the project created in each tutorial, but they are separate outcomes and newly-produced content.</p>
-
-<p>To even have a close copy of what is in the text takes considerable thought and decision-making, especially when it comes to Tutorial 6, which took so much time I did not have time to do the review exercise for Tutorial 8; however, I had met my quota. The one noticeable thing I did differently to how I approached the last assignment in Tutorial 6 was to leave the inline validation in; I wanted to prove that I knew the syntax. It generates an error when used with W3C CSS validation, but it is part of the draft specifications for CSS 4 at <a href="https://drafts.csswg.org/selectors/#validity-pseudos">https://drafts.csswg.org/selectors/</a>. I also had to make decisions about using legends or labels for radio buttons (I ended up with the latter) and using the &quot;for&quot; keyword versus nesting inputs in labels (I could not achieve a good result with the latter, so I chose the former).</p>
-
-<p>The others, including XHTML were relatively straightforward. Indeed, I had no trouble with fixing errors with XHTML. With the topics of the structure of HTML5, Web site development, introductory CSS, and tables I had little trouble. The one other thing I did have trouble comprehending was the parts where browser extensions were used in exercises, but it made me comfortable in using them to support the widest range of browsers. I tested on Firefox and Chrome, but I feel comfortable with specifying other browser extensions as well, particularly now that Opera is taking up Chromium and that more and more browsers are supporting CSS 3 natively.</p>
-
-<p>A final note: This page serves as the hub for Week 12. I feel it is necessary to link my home page to here only (in terms of Week 12 links); however, the constituent assignments are linked to the home page directly from their end.</p>
-
-</body>
+             see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!-- links to external style sheet(s) go here --> 
+  <link type="text/css" rel="stylesheet" href="../home_styles.css" /> 
+ </head> 
+ <body> 
+  <nav> 
+   <ul> 
+    <li><a href="dt01/basic.htm">The Structure of HTML5</a></li> 
+    <li><a href="dt02/contest.htm">Web Site Development</a></li> 
+    <li><a href="dt03/holiday.htm">Styling with CSS</a></li> 
+    <li><a href="dt04/rose.htm">The Physical Layout of Web Pages</a></li> 
+    <li><a href="dt05/morning.htm">Tables</a></li> 
+    <li><a href="dt06/pizza.htm">Web Forms</a></li> 
+    <li><a href="dt09/tutorial/works.htm">Wizard Works</a></li> 
+   </ul> 
+  </nav> 
+  <section id="main"> 
+   <h1>Final Elements, Final Thoughts</h1> 
+   <p>How to approach the final exam, a collection of Design Topics based on all that I had learned, was a difficult decision. Although I was told I could recycle assignments, I thought it defeated the purpose of demonstrating what I had learned. I knew that there were other convenient methods to approach design topics in the text, so I decided to do additional work. What I ended up doing was the first six Review Exercises from Tutorials 1-6. That and the XHTML tutorials make up the seven requisite Design Topics. Of course all have their own stylesheets.</p> 
+   <p>The Design Topics in the nav bar on this page are listed by their topic rather than their content, but the topics are in order of what I had learned. The Review Exercises tie in to the project created in each tutorial, but they are separate outcomes and newly-produced content.</p> 
+   <p>To even have a close copy of what is in the text takes considerable thought and decision-making, especially when it comes to the <a href="dt06/order.htm">Web Form</a>, which took so much time I did not have time to do the review exercise for Tutorial 8; however, I had met my quota. The one noticeable thing I did differently to how I approached the last assignment in Tutorial 6 was to leave the inline validation in; I wanted to prove that I knew the syntax. It generates an error when used with W3C CSS validation, but it is part of the draft specifications for CSS 4 at <a href="https://drafts.csswg.org/selectors/#validity-pseudos">https://drafts.csswg.org/selectors/</a>. I also had to make decisions about using legends or labels for radio buttons (I ended up with the latter) and using the "for" keyword versus nesting inputs in labels (I could not achieve a good result with the latter, so I chose the former).</p> 
+   <p>The others, including <a href="dt09/tutorial/works.htm">XHTML</a> were relatively straightforward. Indeed, I had no trouble with fixing errors with XHTML. I have come to the conclusion, however, that HTML5 is clearly the more versatile of the two technologies. Much of what we had learned about HTML5 in the first place was to gear us up for good practice to meticulously do those things that would have been required with XHTML, although admittedly, we welcomed the semantics of HTML5 as having to liberate us from overusing the div and span elements. With the topics of <a href="dt01/basic.htm">the structure of HTML5</a>, <a href="dt02/contest.htm">Web site development</a>, <a href="dt03/holiday.htm">introductory CSS</a>, and <a href="dt05/morning.htm">tables</a> I had little trouble. The one other thing I did have trouble comprehending was the parts where browser extensions were used in exercises, but it made me comfortable in using them to support the widest range of browsers. I tested on Firefox and Chrome, but I feel comfortable with specifying other browser extensions as well, particularly now that Opera is taking up Chromium and that more and more browsers are supporting CSS 3 natively. That is how I learned the hard way about <a href="dt04/rose.htm">the physical layout of Web pages</a>.</p> 
+   <p>A final note: This page serves as the hub for Week 12. I feel it is necessary to link my home page to here only (in terms of Week 12 links); however, the constituent assignments are linked to the home page directly from their end.</p>  
+  </section>
+ </body>
 </html>
