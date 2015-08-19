@@ -1,203 +1,149 @@
-<!DOCTYPE  html>
-
+<!DOCTYPE html>
 <!--
     HTML and CSS 6th Edition: Comprehensive
     Author: Stuart Simon
     Date: 07/27/2015
     Text Editor: jEdit, http://www.jedit.org/
     -->
-
 <!--  according to the W3C recommendation I should declare the 
 	primary language (en = english) of my WebPages -->
 <html lang="en">
-
-<head>
-
-
-    <title>Oatmeal Raisin Bread</title>
-
-    <!--  charset attribute specifies the character encoding for 
+ <head> 
+  <title>Oatmeal Raisin Bread</title> 
+  <!--  charset attribute specifies the character encoding for 
     	the HTML document (utf-8 = Unicode) 
-    	see http://www.unicode.org/standard/WhatIsUnicode.html -->
-    <meta charset="utf-8"/>
-
-    <!-- java script that supports HTML5 for Browsers that do not -->
-    <script src="http://www.tulane.edu/~gnorth/modernizr.js"></script>
-
-
-    <!--  link(s) to a external style sheet(s) go here -->
-    <link href="dwbase.css" rel="stylesheet" type="text/css"/>
-    <link href="dwlayout.css" rel="stylesheet" type="text/css"/>
-    <link href="dweffects.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="dwprint.css" rel="stylesheet" type="text/css" media="print" />
-
-</head>
-
-<body>
-
-      <header>
-         <div id="div1">
-            Recipes | Ingredients | Articles <br/>
-            <input id="sbox" name="sfield" type="search"/>
-            <input id="sbutton" placeholder="search term" type="button" value="Search"/>
-         </div>
-         <div id="div2">
-            Password <br/>
-            <input id="pwd" name="pwd" placeholder="password" type="text"/>
-            <input id="lbutton" type="button" value="Log In"/>
-         </div>
-         <div id="div3">
-            User Name <br/>
-            <input id="user" name="user" placeholder="username" type="text"/>
-         </div>
-
-
-         <h1>dessertWeb</h1>
-         <nav class="horizontal">
-            <ul>
-               <li><a href="../../">CPST 2400 Home</a></li>
-               <li><a href="../tutorial/treebook.htm">Tree and Book</a></li>
-               <li><a href="../elements.htm">Elements</a></li>
-               <li><a href="index.htm">DessertWEB Home</a></li>
-               <li><a href="torte.htm">Apple Bavarian Torte</a></li>
-               <li><a href="relatedRecipes.htm">Links to External Sites</a></li>
-            </ul>
-         </nav>
-
-      </header>
-
-
-      <section id="left">
-
-         <nav class="vertical">
-            <h1>Categories</h1>
-            <ul>
-               <li><a href="#">Cakes</a></li>
-               <li><a href="#">Candies</a></li>
-               <li><a href="#">Chocolate</a></li>
-               <li><a href="#">Cookies</a></li>
-               <li><a href="#">Crisps</a></li>
-               <li><a href="#">Crumbles</a></li>
-               <li><a href="#">Custards</a></li>
-               <li><a href="#">Frozen Treats</a></li>
-               <li><a href="#">Gelatins</a></li>
-               <li><a href="#">Liqueur Desserts</a></li>
-               <li><a href="#">Marshmallows</a></li>
-               <li><a href="#">Meringues</a></li>
-               <li><a href="#">Mousse</a></li>
-               <li><a href="#">Pies</a></li>
-               <li><a href="#">Pralines</a></li>
-               <li><a href="#">Sauces</a></li>
-               <li><a href="#">Truffles</a></li>
-            </ul>
-         </nav>
-
-         <nav class="vertical">
-            <h1>Related Recipes</h1>
-            <ul>
-               <li><a href="#">Apple Crisp</a></li>
-               <li><a href="#">Apple Fingers</a></li>
-               <li><a href="#">Apple Streudel</a></li>
-               <li><a href="#">Cherry Torte</a></li>
-               <li><a href="#">Fruit Pie</a></li>
-               <li><a href="#">Parfait</a></li>
-               <li><a href="#">Strawberry Torte</a></li>
-            </ul>
-         </nav>
-
-      </section>
-
-      <section id="center">
-
-         <article>
-            <div class="hgroup">
-               <h1>Oatmeal Raisin Bread
-                   <img alt="5 stars" src="star.png"/>
-                   <img alt="" src="star.png"/>
-                   <img alt="" src="star.png"/>
-                   <img alt="" src="star.png"/>
-                   <img alt="" src="star.png"/>
-               </h1>
-               <h2>by Clazarus</h2>
-            </div>
-
-            <img alt="Bread image" id="dishimg" src="oatmeal-raisin-bread-2.jpg" width="250"/>
-            <p>A simple and egg-free recipe. Best served cold. Makes one loaf,
-            but often doubled.
-            </p>
-            <p><a href="#">Rate/Review</a> | <a href="#">Review Page</a></p>
-         </article>
-
-            <aside>
-               <h1>Recipe Box</h1>
-               <ul>
-                  <li><a href="#">Add to Recipe Box</a></li>
-                  <li><a href="#">Add to Shopping List</a></li>
-                  <li><a href="#">Share Recipe</a></li>
-                  <li><a href="#">Add to Menu</a></li>
-                  <li><a href="#">Customize Recipe</a></li>
-                  <li><a href="#">Share/Email</a></li>
-               </ul>
-            </aside>
-
-            <h2>Ingredients</h2>	
-            <ul>
-               <li>1 cup flour</li>
-               <li>1/2 cup whole-wheat flour</li> 
-               <li>1 cup baking soda</li>
-               <li>1/4 cup baking powder</li> 
-               <li>1 cup rolled oats</li>
-               <li>1 tsp molasses</li>
-               <li>2 1/2 cups plain yogurt</li>
-               <li>1 cup raisins</li>
-            </ul>
-
-            <h2>Directions</h2>
-            <ol>
-               <li>Preheat oven to 350Â° F (230Â° C).</li>
-               <li>Add all ingredients together up to and including rolled oats in a lage bowl.</li>
-               <li>On the side, mix molasses and yogurt until evenly distributed.</li>
-               <li>Add mixture to bowl and stir until smooth.</li>
-               <li>Stir in raisins.</li>
-               <li>Grease or spray 12 x 6 in. pan. Add mixture to pan.</li>
-               <li>Bake until golden brown.</li>
-               <li>Best served when having been refrigerated for at least one
-               day.</li>
-            </ol>
-      </section>
-
-      <section id="right">
-
-         <h1>Reviews</h1>
-         <blockquote>
-            <p>
-               <img alt="5 stars" src="star.png"/> <img alt="" src="star.png"/>
-               <img alt="" src="star.png"/> <img alt="" src="star.png"/> <img
-               alt="" src="star.png"/>
-            </p>
-            <p>I was interested to find this egg-free recipe when I was five years old. My mother, sister, and I have spent a lifetime of making it together. The recipe is simple enough that we have it all committed to memory. The wondrous taste of chewy oats and rasins in our mouths has proven to be worth more than the work involved in making it!</p>
-            <p>
-               â€” Reviewed on Sep. 22, 2014 by SSIMON6.
-            </p>
-         </blockquote>
-                
-         
-      </section>
-
-      <footer>
-          dessertWeb Â© 2014 English (US)
-          <span>
-            <a href="#">About</a>
-            <a href="#">Developers</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Help</a>
-          </span>
-      </footer>
-
-   
-
-
-
-</body>
+    	see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="dwbase.css" rel="stylesheet" type="text/css" /> 
+  <link href="dwlayout.css" rel="stylesheet" type="text/css" /> 
+  <link href="dweffects.css" rel="stylesheet" type="text/css" media="screen" /> 
+  <link href="dwprint.css" rel="stylesheet" type="text/css" media="print" /> 
+ </head> 
+ <body> 
+  <header> 
+   <div id="div1">
+     Recipes | Ingredients | Articles 
+    <br /> 
+    <input id="sbox" name="sfield" type="search" /> 
+    <input id="sbutton" placeholder="search term" type="button" value="Search" /> 
+   </div> 
+   <div id="div2">
+     Password 
+    <br /> 
+    <input id="pwd" name="pwd" placeholder="password" type="text" /> 
+    <input id="lbutton" type="button" value="Log In" /> 
+   </div> 
+   <div id="div3">
+     User Name 
+    <br /> 
+    <input id="user" name="user" placeholder="username" type="text" /> 
+   </div> 
+   <h1>dessertWeb</h1> 
+   <nav class="horizontal"> 
+    <ul> 
+     <li><a href="../../">CPST 2400 Home</a></li> 
+     <li><a href="../tutorial/treebook.htm">Tree and Book</a></li> 
+     <li><a href="../elements.htm">Elements</a></li> 
+     <li><a href="index.htm">DessertWEB Home</a></li> 
+     <li><a href="recipe.htm">Apple Bavarian Torte</a></li> 
+     <li><a href="relatedRecipes.htm">Links to External Sites</a></li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <section id="left"> 
+   <nav class="vertical"> 
+    <h1>Categories</h1> 
+    <ul> 
+     <li><a href="#">Cakes</a></li> 
+     <li><a href="#">Candies</a></li> 
+     <li><a href="#">Chocolate</a></li> 
+     <li><a href="#">Cookies</a></li> 
+     <li><a href="#">Crisps</a></li> 
+     <li><a href="#">Crumbles</a></li> 
+     <li><a href="#">Custards</a></li> 
+     <li><a href="#">Frozen Treats</a></li> 
+     <li><a href="#">Gelatins</a></li> 
+     <li><a href="#">Liqueur Desserts</a></li> 
+     <li><a href="#">Marshmallows</a></li> 
+     <li><a href="#">Meringues</a></li> 
+     <li><a href="#">Mousse</a></li> 
+     <li><a href="#">Pies</a></li> 
+     <li><a href="#">Pralines</a></li> 
+     <li><a href="#">Sauces</a></li> 
+     <li><a href="#">Truffles</a></li> 
+    </ul> 
+   </nav> 
+   <nav class="vertical"> 
+    <h1>Related Recipes</h1> 
+    <ul> 
+     <li><a href="#">Apple Crisp</a></li> 
+     <li><a href="#">Apple Fingers</a></li> 
+     <li><a href="#">Apple Streudel</a></li> 
+     <li><a href="#">Cherry Torte</a></li> 
+     <li><a href="#">Fruit Pie</a></li> 
+     <li><a href="#">Parfait</a></li> 
+     <li><a href="#">Strawberry Torte</a></li> 
+    </ul> 
+   </nav> 
+  </section> 
+  <section id="center"> 
+   <article> 
+    <div class="hgroup"> 
+     <h1>Oatmeal Raisin Bread <img alt="5 stars" src="star.png" /> <img alt="" src="star.png" /> <img alt="" src="star.png" /> <img alt="" src="star.png" /> <img alt="" src="star.png" /> </h1> 
+     <h2>by Clazarus</h2> 
+    </div> 
+    <img alt="Bread image" id="dishimg" src="oatmeal-raisin-bread-2.jpg" width="250" /> 
+    <p>A simple and egg-free recipe. Best served cold. Makes one loaf, but often doubled. </p> 
+    <p><a href="#">Rate/Review</a> | <a href="#">Review Page</a></p> 
+   </article> 
+   <aside> 
+    <h1>Recipe Box</h1> 
+    <ul> 
+     <li><a href="#">Add to Recipe Box</a></li> 
+     <li><a href="#">Add to Shopping List</a></li> 
+     <li><a href="#">Share Recipe</a></li> 
+     <li><a href="#">Add to Menu</a></li> 
+     <li><a href="#">Customize Recipe</a></li> 
+     <li><a href="#">Share/Email</a></li> 
+    </ul> 
+   </aside> 
+   <h2>Ingredients</h2> 
+   <ul> 
+    <li>1 cup flour</li> 
+    <li>1/2 cup whole-wheat flour</li> 
+    <li>1 cup baking soda</li> 
+    <li>1/4 cup baking powder</li> 
+    <li>1 cup rolled oats</li> 
+    <li>1 tsp molasses</li> 
+    <li>2 1/2 cups plain yogurt</li> 
+    <li>1 cup raisins</li> 
+   </ul> 
+   <h2>Directions</h2> 
+   <ol> 
+    <li>Preheat oven to 350° F (230° C).</li> 
+    <li>Add all ingredients together up to and including rolled oats in a lage bowl.</li> 
+    <li>On the side, mix molasses and yogurt until evenly distributed.</li> 
+    <li>Add mixture to bowl and stir until smooth.</li> 
+    <li>Stir in raisins.</li> 
+    <li>Grease or spray 12 x 6 in. pan. Add mixture to pan.</li> 
+    <li>Bake until golden brown.</li> 
+    <li>Best served when having been refrigerated for at least one day.</li> 
+   </ol> 
+  </section> 
+  <section id="right"> 
+   <h1>Reviews</h1> 
+   <blockquote> 
+    <p> <img alt="5 stars" src="star.png" /> <img alt="" src="star.png" /> <img alt="" src="star.png" /> <img alt="" src="star.png" /> <img alt="" src="star.png" /> </p> 
+    <p>I was interested to find this egg-free recipe when I was five years old. My mother, sister, and I have spent a lifetime of making it together. The recipe is simple enough that we have it all committed to memory. The wondrous taste of chewy oats and rasins in our mouths has proven to be worth more than the work involved in making it!</p> 
+    <p> — Reviewed on Sep. 22, 2014 by SSIMON6. </p> 
+   </blockquote> 
+  </section> 
+  <footer>
+    dessertWeb © 2014 English (US) 
+   <span> <a href="#">About</a> <a href="#">Developers</a> <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Help</a> </span> 
+  </footer>  
+ </body>
 </html>
