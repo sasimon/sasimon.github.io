@@ -76,5 +76,5 @@ footer address {
 }
 
 section h2+ul {
-	list-style-image: url(Week_05/arrow.png);
+	list-style-image: url(arrow.png);
 }
