@@ -1,38 +1,75 @@
 <!DOCTYPE html>
-
 <!--
 HTML and CSS 6th Edition: Comprehensive
 Author: Stuart Simon
 Date: 06/28/2015
 Text Editor: jEdit, http://www.jedit.org/
 -->
-
 <!--  according to the W3C recommendation I should declare the
         primary language (en = english) of my WebPages -->
 <html lang="en">
-
-<head>
-
-     <title>Week 6 Elements: The Gresham Children's Choir</title>
-
-     <!--  charset attribute specifies the character encoding for
+ <head> 
+  <title>Week 6 Elements: The Gresham Children's Choir</title> 
+  <!--  charset attribute specifies the character encoding for
              the HTML document (utf-8 = Unicode)
-             see http://www.unicode.org/standard/WhatIsUnicode.html -->
-     <meta charset="utf-8" />
-
-     <!-- java script that supports HTML5 for Browsers that do not -->
-     <script src="http://www.tulane.edu/~gnorth/modernizr.js"></script>
-
-
-     <!--  link(s) to a external style sheet(s) go here -->
-     <link href="gcc_layout.css" rel="stylesheet" type="text/css" />
-     <link href="gcc_styles.css" rel="stylesheet" type="text/css" />
-     
-
-</head>
-
-<body>
-
-
-</body>
+             see http://www.unicode.org/standard/WhatIsUnicode.html --> 
+  <meta charset="utf-8" /> 
+  <!-- java script that supports HTML5 for Browsers that do not --> 
+  <script src="../../../modernizr-latest.js"></script> 
+  <!--  link(s) to a external style sheet(s) go here --> 
+  <link href="gcc_layout.css" rel="stylesheet" type="text/css" /> 
+  <link href="gcc_styles.css" rel="stylesheet" type="text/css" /> 
+  <style type="text/css">
+     nav.vertical ul li {
+     	 background-color: yellow
+     }
+     </style> 
+ </head> 
+ <body> 
+  <header> 
+   <h1> <img src="gcclogo.png" alt="Gresham's Children Choir" /> </h1> 
+  </header> 
+  <nav class="horizontal"> 
+   <ul> 
+    <li> <a href="choir.htm">Home</a> </li> 
+    <li> <a href="#">News &amp; Events</a> </li> 
+    <li> <a href="#">Bookings</a> </li> 
+    <li> <a href="#">Members Only</a> </li> 
+    <li> <a href="#">Support GCC</a> </li> 
+   </ul> 
+  </nav> 
+  <nav class="vertical"> 
+   <ul> 
+    <!--Rubric item 11, 1 point: Link to assignments home page--> 
+    <li> <a href="../../">Stuart Simon's Assignment Web Site Home</a> </li> 
+    <li> 
+     <!--Rubric item 4, 5 points: Elements discussion--> <a href="elements.htm">Elements</a> </li> 
+    <li> 
+     <!--Rubric item 7, 5 points: External links page--> <a href="links.htm">External Links</a> </li> 
+   </ul> 
+   <ul> 
+    <li> <a href="#">History</a> </li> 
+    <li> <a href="#">Achievements</a> </li> 
+    <li> <a href="#">Staff</a> </li> 
+    <li> <a href="#">Board</a> </li> 
+    <li> <a href="#">Gallery</a> </li> 
+    <li> <a href="#">Audio</a> </li> 
+    <li> <a href="#">Video</a> </li> 
+    <li> <a href="#">Youth Choir</a> </li> 
+    <li> <a href="#">Boy's Choir</a> </li> 
+    <li> <a href="#">Girl's Choir</a> </li> 
+    <li> <a href="#">Mixed Choir</a> </li> 
+    <li> <a href="#">Touring Choir</a> </li> 
+   </ul> 
+  </nav> 
+  <section> 
+   <p>I came to this class knowing CSS syntax, but have had somewhat less experience with it than HTML. But the first CSS tutorial has helped in that regard. It is a powerful tool, much more powerful than the &lt;font&gt;&lt;/font&gt; tags could ever be. At any rate, the most difficult decisions for me were the colors to use, where to use them, and where to apply text effects.</p> 
+   <p>I came to this project with an idea of using background colors for the header, the footer, the sections, the navs, and the asides, but I could not make up my mind which to use, only that I wanted to try something other than green. If there's one thing I remembered from my Human-Computer Interaction class, it is that I should not subject my viewers to primary color overload, although I seem to be immune to it. This is how I came upon the idea of using secondary colors in various combinations. I made the navs opaque to make them stand out. That left the section, aside, and footer. One I colored cyan, one of the others magenta, and the remaining one yellow.</p> 
+   <p>I also knew early on that a lot of my text and pseudo-class manipulation would come in the form of changing the styles of hyperlinks in various states. This I admittedly came to by mentally following the model of Sunny Acres. I ended up fine-tuning the links in my links page just as much for the reason that a browser extension that I have since disabled was interfering with my choice of color for the links. I chose as close to orange as Web-safe colors would permit in order that it would contrast with both the background image and the transparent cyan it was immediately on.</p> 
+   <p>As for the background image, I knew that it was already on the home page. I placed it in the background to prove that the background colors of the section, aside, and footer were transparent. I am fully aware that there is point value in the page being to your liking, but I did not see any other way. I liked to use the image for that purpose because it is monochromatic. Thank you for visiting!</p> 
+  </section> 
+  <footer> 
+   <address> Gresham Children's Choir · Mentor, OH 44061 · (440) 555-3811 </address> 
+  </footer>   
+ </body>
 </html>
