@@ -1,0 +1,52 @@
+/* Merriwether font */
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext);
+
+/* Body style */
+
+* {
+	font-family: Merriwether, serif;
+}
+
+header {
+	background-color: lightseagreen;
+	color: white;
+	
+}
+
+header h1 {
+	font-size: 72pt;
+}
+
+/* Form styles */
+
+form {
+	width: 100%;
+}
+
+input, select, textarea {
+	width: 100%;
+}
+
+
+/* Images in blocks */
+
+#details img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Div styles */
+
+div {
+	width: 100%;
+	position: relative;
+}
+
+/* Footer style */
+
+footer {
+	background-color: saddlebrown;
+	color: white;
+}

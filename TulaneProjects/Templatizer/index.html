@@ -3,12 +3,23 @@
 	<head>
 		<title>Test of outerXHTML</title>
 		<meta charset="utf-8" />
+		<!-- Jquery -->
 		<script src="jquery-2.1.4.min.js"></script>
+		<!-- InnerXHTML function enhancing Jquery -->
 		<script src="innerxhtml.js"></script>
+		<!-- Template function, depends on Jquery and innerXHTML -->
 		<script src="template.js"></script>
+		<!-- Script to add HTML support for older browsers -->
+		<script src="../../modernizr-latest.js"></script>
+		<!-- Layout imitates home page -->
+		<link href="../../portfolio.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+	<h1>Welcome to Templatizer!</h1>
+	<p>This form will apply a template to your existing Web page code as is required for the Webpage Design and Development courses at Tulane University taught by Dr. George North. It uses JavaScript in its code that invokes the jQuery library. The HTML code is generated on submission of the form (by pressing the Templatize button). The CSS code is for the top, "header" comment of the CSS file only, and relies only on the current date. It is generated on page load.
 		<form onsubmit="return false">
+			<!-- Doctype input -->
+			<label for="doctype">Doctype:</label>
 			<select id="doctype" name="doctype">
 				<option value="HTML 2.0">HTML 2.0</option>
 				<option value="HTML 3.2">HTML 3.2</option>

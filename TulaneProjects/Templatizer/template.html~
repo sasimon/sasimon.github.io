@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Template used with Templatizer</title>
+		<meta charset="utf-8" />
+		<!-- script supporting HTML5 for browsers that do not -->
+		<script src="../../modernizr-latest.js"></script>
+	</head>
+	<body>
+		<section id="main"><h1>Template Used with Templatizer</h1>
+		<p>The Templatizer project was created with the purpose of fitting existing Web pages to the template prescribed by Dr. George North of Tulane University to his students the summer 2015 offering of Webpage Design and Development. The Templatizer is designed specifically to work by the rules set out by the class: it does not add any boilerplate elements other than those included in the template. The text of the template is &copy;2015 by <a href="http://georgenorth.net/~george/georgeHome.php">George North</a>. Footnotes are mine, not his.
+		
+		<pre>&lt;!DOCTYPE html&gt; (<a href="#f1">1</a>)
+		
+		&lt;!-- 
+		HTML and CSS 6th Edition: Comprehensive
+		Author:
+		Date:
+		Text Editor: 
+		--&gt; (<a href="#f2">2</a>)
+		
+		&lt;!--  according to the W3C recommendation I should declare the 
+			primary language (en = english) of my WebPages --&gt;
+		&lt;html lang="en"&gt;
+		
+		&lt;head&gt;
+		&lt;title&gt;some_sort_of_name_or_the_other&lt;/title&gt; (<a href="#f3">3</a>)
+		
+		&lt;!--  charset attribute specifies the character encoding for 
+			the HTML document (utf-8 = Unicode) 
+			see http://www.unicode.org/standard/WhatIsUnicode.html --&gt;
+		&lt;meta charset="utf-8" /&gt; (<a href="#f4">4</a>)
+		&lt;!-- java script that <a href="modernizr.html">supports HTML5 for Browsers that do not</a> --&gt;
+		&lt;script src="http://www.tulane.edu/~gnorth/modernizr.js"&gt;&lt;/script&gt;
+		
+		&lt;!--  link(s) to a external style sheet(s) go here --&gt;
+		&lt;link href="name_of_some_stylesheet.css" rel="stylesheet" type="text/css" /&gt;
+		&lt;/head&gt;
+		
+		&lt;body&gt;
+		
+		
+		&lt;/body&gt;
+		&lt;/html&gt;
+		</pre></section>
+		<hr>
+		<section id="footnotes">
+		<ol>
+			<li id="f1">Doctype declaration changes according to the value of the <span class="formref">input</span> form field and <a href="dtd_list.html">this doctype list</a>.</li>
+			<li id="f2">This comment is also produced on the form as CSS syntax, and is the only item in the CSS template. In both the CSS template and the HTML template, the literals "Stuart Simon" and "jEdit, http://www.jedit.org/" are hard-coded as the Author and Text Editor, respectively, with JavaScript inserting the current date as mm/dd/yyyy. Because of this, the CSS template is activated on page load rather than the press of the Templatize button.</li>
+			<li id="f3">Changed if the page has a title.</li>
+			<li id="f4">HTML5-sanctioned short form of <pre>&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;.</pre> Changes to long form if doctype is not HTML5.</li>
+			<li id="f5">Repeatable. If there are stylesheet links (identified with a <span class="formref">rel</span> attribute of <span class="formref">stylesheet</span>) in the document, this tag is replaced by them, but always with at least the given minimum attributes set. <span class="formref">media</span> attribute added as original text contains such.</li>
+		</ol>
+		</section>
+			
+	</body>
+</html>
