@@ -1,0 +1,5 @@
+#details dl {
+	display: block;
+	float: left;
+	width: 50%;
+}

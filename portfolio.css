@@ -8,6 +8,10 @@
 	font-family: Merriweather, serif;
 }
 
+body {
+	width: 100%;
+}
+
 header {
 	background-color: lightseagreen;
 	color: white;
@@ -59,8 +63,9 @@ textarea {
 
 #details img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
 }
 
 /* Div styles */
@@ -70,9 +75,14 @@ div {
 	position: relative;
 }
 
+#details {
+	text-align: center;
+}
+
 /* Footer style */
 
 footer {
 	background-color: saddlebrown;
 	color: white;
 }
+
