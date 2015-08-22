@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ideal Body Weight Calculator</title>
+		<meta charset="utf-8" />
+		<!-- script that adds HTML5 support to legacy browsers -->
+		<script src="modernizr-latest.js"></script>
+		<!-- JQuery script to add form listener -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!-- Jquery fallback to local if Google CDN fails -->
+		<script>if (typeof jQuery === 'undefined') {
+			document.write(unescape('%3Cscript%20src%3D%22jquery-2.1.4.min.js%22%3E%3C/script%3E'));
+			</script>
+		<!-- calculator functions inside this script -->
+		<script src="calculator.js"></script>
+	</head>
+	<body>
+		<h1>Ideal Body Weight Calculator</h1>
+		<form id="calculator">
+		<fieldset id="gender">
+			<legend>Gender</legend>
+			<label for="male">Male</label>
+			<input type="radio" value="male" id="male" name="gender" />
+			<label for="female">Female</label>
+			<input type="radio" value="female" id="female" name="gender" />
+		</fieldset>
+		<fieldset id="height">
+			<legend>Height</legend>
+			<div id="height-warning"></div>
+			<input type="number" id="cm" name="cm" />
+			<label for="cm">cm</label>
+			<input type="number" id="inches" name="inches" />
+			<label for="inches">inches</label>
+		</fieldset>
+		<fieldset id="weight">
+			<legend>Total Body Weight</legend>
+			<input type="number" id="kg" name="kg" />
+			<label for="kg">kg</label>
+			<input type="number" id="lbs" name="lbs" />
+			<label for="lbs">lbs</label>
+		</fieldset>
+		</form>
+		<div id="results">
+			<div id="ibw">IBW will appear here.</div>
+			<div id="abw">ABW will appear here.</div>
+		</div>
+	</body>
+</html>
+		
+		
