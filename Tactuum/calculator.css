@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url("OpenSans/OpenSansRegular.ttf") format("truetype");
+}
+
+
+/* Style rules for all devices */
+
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+
+* {
+	font-family: "Open Sans"
+}
+
+button {
+  width: 49%;
+  height: 36pt;
+}
