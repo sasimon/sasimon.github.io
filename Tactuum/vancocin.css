@@ -1,0 +1,91 @@
+/* Style sheet sample for Vancocin tablets */
+
+/* Open Sans font */
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("OpenSans/OpenSansRegular.ttf") format("truetype");
+}
+
+/* Font sizes for various devices */
+
+/* iPhone (iPhone 6 width = 736 px) */
+
+@media (max-width: 736px) {
+	* {
+		font-size: 12pt;
+	}
+}
+
+/* iPad (width = 1024 px) */
+
+@media (min-width: 737px) and (max-width: 1024px) {
+	* {
+		font-size: 12pt;
+	}
+}
+
+/* Desktop computer */
+
+@media (min-width: 1025px) {
+	* {
+		font-size: 12pt;
+	}
+}
+
+/* General style rules */
+
+* {
+	font-family: "Open Sans", sans-serif;
+}
+
+ol {
+	counter-reset:li;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ol > li {
+	position: relative;
+	margin: 0 0 6px 2em;
+	padding: 4px 8px;
+	list-style: none;
+}
+
+ol > li:before {
+	content:counter(li);
+	counter-increment:li;
+	position: absolute;
+	top: -2px;
+	left: -2em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 2em;
+	margin-right: 8px;
+	padding: 4px;
+	color: #000000;
+}
+
+li:nth-of-type(odd) {
+	background-color: #d9d9d9;
+}
+
+li:first-of-type {
+	background-color: #4b2e83;
+	color: #FFFFFF;
+}
+
+
+
+/* Headings */
+
+h1 {
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 16pt;
+	font-weight: bold;
+}
