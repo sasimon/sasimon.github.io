@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   Stuart Simon's Archive Music Application
+  </title>
+  <meta charset="utf-8"/>
+  <!-- add one of the jQWidgets styles -->
+  <link href="jqwidgets/styles/jqx.base.css" rel="stylesheet" type="text/css"/>
+  <!-- Theme styles -->
+  <link href="jqwidgets/styles/jqx.android.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.arctic.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.black.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.blackberry.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.bootstrap.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.classic.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.darkblue.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.energyblue.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.fresh.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.glacier.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.highcontrast.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.metro.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.metrodark.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.mobile.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.office.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.orange.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.shinyblack.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.summer.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.ui-darkness.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.ui-le-frog.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.ui-lightness.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.ui-overcast.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.ui-redmond.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.ui-smoothness.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.ui-start.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.ui-sunny.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.web.css" rel="stylesheet" type="text/css"/>
+  <link href="jqwidgets/styles/jqx.windowsphone.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+	  .flexbox {
+		  display: flex;
+		  align-items: center;
+	  }
+	  .init-invisible {
+		  display: none;
+	  }
+	  div.jqxinput {
+		  display: inline-block;
+	  }
+  </style>
+  <!-- add the jQuery script -->
+  <script src="scripts/jquery-1.11.1.min.js" type="text/javascript">
+  </script>
+  <!-- add one or more widgets -->
+<!--
+  <script src="jqwidgets/jqxbuttons.js" type="text/javascript">
+  </script>
+  <script src="jqwidgets/jqxexpander.js" type="text/javascript">
+  </script>
+  <script src="jqwidgets/jqxinput.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxdata.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxgrid.selection.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxscrollbar.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxgrid.selection.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxlistbox.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxdropdownlist.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxnumberinput.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxgrid.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxgrid.selection.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxgrid.edit.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxformattedinput.js" type="text/javascript"></script>
+  <script src="jqwidgets/jqxcombobox.js" type="text/javascript"></script>
+-->
+  <script src="jqwidgets/jqx-all.js" type="text/javascript"></script>
+ </head>
+ <body>
+  <div id="databaseControl">
+   <div>
+    Loading database, please wait...
+   </div>
+   <div>
+   </div>
+  </div>
+  <div id="year" class="init-invisible">
+	  <div>Year: <div class="jqxinput" id="yearInput"></div></div>
+	  <div>
+		  <div id="album">
+			<div>Album: <div class="jqxinput" id="albumInput"></div></div>
+			<div id="albumContent">
+				<input id="commitAlbum" type="button" value="Commit" /><input id="rollbackAlbum" type="button" value="Rollback" />
+			  <div id="albumDate">
+				  <div>Date</div>
+				  <div><div class="jqxinput" id="albumDateInput"></div><input type="button" id="editDates" value="Edit Dates"></div>
+			  </div>
+			  <div id="albumLocation">
+				  <div>Location</div>
+				  <div><div id="albumLocationInput" class="jqxinput"></div><input id="otherLocation" /><input type="button" id="editLocations" value="Edit Locations" /></div>
+			  </div>
+			  <div id="albumArtists">
+				  <div>Artists</div>
+				  <div>
+					  <input type="button" id="addArtist" value="Add Artist" /> <input type="button" id="saveArtist" value="Save Artist" />
+					  <div id="albumArtistsTable"></div>
+				  </div>
+			  </div>
+			  <div id="albumGenres">
+				  <div>Genres</div>
+				  <div>
+					  <input type="button" id="addAlbumGenre" value="Add Genre" /><input type="button" id="editGenres" value="Edit Genres" />
+					  <div id="albumGenresTable"></div>
+				  </div>
+			  </div>
+			  <div id="disc">
+				  <div>Disc <div class="jqxinput" id="discInput"></div></div>
+				  <div>
+					  <div id="tracks">
+						  <div>Tracks</div>
+						  <div>
+							  <div id="addTracks">
+								  <div>Add Tracks Here</div>
+								  <div>
+									  <textarea id="addTracksField"></textarea>
+									  <input id="addTracksButton" type="button" value="Add Tracks" />
+									  <input id="cancelAddTracks" type="button" value="Cancel" />
+								  </div>
+							  </div>
+							  <div id="tracksTable"></div>
+						  </div>
+					  </div>
+					  <div id="trackArtists">
+						  <div>Track Artists</div>
+						  <div>
+							  <input id="addTrackArtist" type="button" value="Add Track Artist" />
+							  <div id="trackArtistsTable"></div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+		  </div>
+		  <div id="dates">
+			  <div>Dates</div>
+			  <div>
+				  <input id="addDate" type="button" value="Add Date" /><input id="commitDates" type="button" value="Commit" /><input id="rollbackDates" type="button" value="Rollback" />
+				  <div id="datesTable"></div>
+				  <input id="closeDates" type="button" value="Close" />
+			  </div>
+		  </div>
+	  </div>
+  </div>
+  <div id="genres" class="init-invisible"><div>Genres</div>			<div id="genresContent"><div id="reparentGenres"><div>Reparent Existing Genre</div>			<div id="reparentGenresContent"><div id="reparentGenresFlexbox" class="flexbox">			<div>				Genre to Reparent:				<div id="genreToReparent">				</div>			</div>			<div>				Selected Parents:				<div id="reparentParentsPool">				</div>			</div></div>			<input id="reparentGenresCommit" value="Commit" type="button">			<input id="reparentGenresRollback" value="Rollback" type="button"></div></div>			<div id="newGenre"><div>Add New Genre</div>			<div id="newGenreContent"><div id="newGenreFlexbox" class="flexbox">			<div>New Genre Name:<br>				<input id="newGenreName">			</div>			<div>Parents:				<div id="newGenreParentsPool">				</div>			</div></div>			<input id="newGenreCommit" value="Commit" type="button">			<input id="newGenreRollback" value="Rollback" type="button"></div></div><input id="closeGenres" value="Close" type="button"></div></div>
+  <div id="locations" class="init-invisible">
+	  <div>
+		Locations
+	  </div>
+	  <div>
+		  <div id="locationNames">
+			  <div>
+				  Location Names
+			  </div>
+			  <div>
+			  </div>
+		  </div>
+		  <div id="addLocID">
+			  <div>
+				  Add Location ID
+			  </div>
+			  <div>
+				  <input id="locIdToAdd" /><input type="button" id="saveLocID" value="Save" />
+			  </div>
+		  </div>
+	  </div>
+  </div>
+  <script src="sql.js"></script>
+  <script src="ArchiveMusicGlobal.js"></script>
+  <script src="albums.js"></script>
+  <script src="YearAndDates.js"></script>
+  <script src="Genres.js"></script>
+  <script src="Locations.js"></script>
+  <script src="ArchiveMusic.js">
+  </script>
+ </body>
+</html>

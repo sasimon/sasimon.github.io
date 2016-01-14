@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='UTF-8'>
+
+
+<meta name='generator' content='jAlbum 13.0.8 with Slide Show 4 version 3.2.6, created: 1/12/16 10:34 AM'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" id="theViewport"/> 
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<title>
+large
+</title>
+<link href="res/common.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#title_in_image {
+	color: #ffffff;	
+}
+</style>
+
+<link rel="alternate" href="album.rss" type="application/rss+xml">
+</head>
+
+<body onload="window.scrollTo(0, 0)" >
+
+<div id="indexDiv">
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="nav">
+<div id="L1">
+<img src="res/help.png" class="roundbutton" alt="Help" title="Help" id="openHelp" onClick="javascript:showHelp()">
+</div>
+
+<div id="L2">
+ <a href="javascript:closeIndex(-1);"><img src="res/play.png" class="roundbutton" alt="Start slide show" title="Start slide show"></a>
+</div>
+
+<div id="L3">
+	 <img src="res/expand.png" id="fs" class="roundbutton"  alt="Full screen" title="Full screen" onClick="javascript:toggleFullScreen()">
+	  &nbsp;
+</div>
+
+<div id="Ml">
+	<!-- Previous button -->
+	
+	    &nbsp;
+</div>
+
+<div id="M">
+<!-- Link to home page, if any -->
+    
+</div>
+
+<div id="Mr">
+	<!-- Next button -->
+	
+		&nbsp;
+</div>
+
+
+<div id="R2">
+    
+		&nbsp;
+</div>
+
+<div id="R3">
+    &nbsp;
+</div>
+
+<div id="R1">
+<a href="javascript:opencloseSettings()"><img src="res/settings.png" class="roundbutton" alt="Settings" title="Settings" id="opencloseSettings"></a>
+</div>
+</div>
+
+<div id="msg">
+</div>
+<div id="settingsDiv" onClick="javascript:testSettingsClick(event)">
+<form id="settings">
+Hide slide navigation buttons:
+<select id="hidenav" size="1">
+  <option  selected value="0">no</option> 
+  <option value="1">yes</option>
+  <option value="2">while playing</option>
+</select><br />
+Font size:
+<select id="fontSizeFactor" size="1">
+  <option value="2.0">200%</option>
+  <option value="1.75">175%</option>
+  <option value="1.5">150%</option>
+  <option value="1.25">125%</option>
+  <option selected value="1.0">100%</option>
+  <option value="0.75">75%</option>
+  <option value="0.5">50%</option>
+</select><br />
+Button size:
+<select id="roundButtonHeight" size="1">
+  <option value="50">largest</option>
+  <option value="42">large</option>
+  <option selected value="35">normal</option>
+  <option value="28">small</option>
+  <option value="20">smallest</option>
+</select><br />
+Viewing time:
+<select id="viewtime" size="1"> 
+  <option selected value="1">1 s</option>
+  <option value="3">3 s</option>
+  <option value="5">5 s</option>
+  <option value="8">8 s</option>
+  <option value="15">15 s</option>
+  <option value="25">25 s</option>
+  <option value="60">60 s</option>
+</select><br />
+Transition effect:
+<select id="transeffect" size="1">
+  <option value="0">None</option>
+  <option value="1">Fade</option>
+  <option value="2">Blind</option>
+  <option selected value="3">Slide</option>
+  <option value="4">Zoom</option>
+  <option value="5">Puff</option>
+  <option value="6">Compress</option>
+  <option value="7">All</option>
+</select>
+in
+<select id="transtime" size="1">
+  <option value="0">0 s</option>
+  <option selected value="1">1 s</option>
+  <option value="2">2 s</option>
+  <option value="4">4 s</option>
+  <option value="8">8 s</option>
+</select><br />
+<div id="shareCombo">
+&nbsp;Disable music autoplay:
+<select id="hideshare" size="1">
+  <option  selected value="0">no</option> 
+  <option value="1">yes</option>
+</select><br />
+</div>
+&nbsp;Enable over-sized images:
+<select id="enableOversizedImage" size="1">
+  <option  selected value="0">no</option> 
+  <option value="1">yes</option>
+</select>
+</form>
+</div>
+
+
+<div id="swipeMe"  onClick="javascript:closeWindows()">
+
+
+<h1>large</h1>
+
+
+
+<!-- Index table of images for a fixed # thumbs per row with table tags: -->
+<table class="thumbs">
+<tr><td>
+<div class="box">
+  <img src="thumbs/151016_016_WalterWolfmanWashington.jpg" alt="151016_016_WalterWolfmanWashington" title="151016_016_WalterWolfmanWashington" id="0" onClick="javascript:closeIndex(0)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151016_027_WalterWolfmanWashington.jpg" alt="151016_027_WalterWolfmanWashington" title="151016_027_WalterWolfmanWashington" id="1" onClick="javascript:closeIndex(1)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151016_054_MarciaBall.jpg" alt="151016_054_MarciaBall" title="151016_054_MarciaBall" id="2" onClick="javascript:closeIndex(2)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151017_030_MasonRuffner.jpg" alt="151017_030_MasonRuffner" title="151017_030_MasonRuffner" id="3" onClick="javascript:closeIndex(3)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151017_040_LittleFreddieKing.jpg" alt="151017_040_LittleFreddieKing" title="151017_040_LittleFreddieKing" id="4" onClick="javascript:closeIndex(4)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151017_074_LurrieBell.jpg" alt="151017_074_LurrieBell" title="151017_074_LurrieBell" id="5" onClick="javascript:closeIndex(5)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151017_092_KennyNeal.jpg" alt="151017_092_KennyNeal" title="151017_092_KennyNeal" id="6" onClick="javascript:closeIndex(6)" ><br>
+</div></td></tr>
+<tr><td>
+<div class="box">
+  <img src="thumbs/151017_137_TheFunkyMeters.jpg" alt="151017_137_TheFunkyMeters" title="151017_137_TheFunkyMeters" id="7" onClick="javascript:closeIndex(7)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151017_151_TheFunkyMeters.jpg" alt="151017_151_TheFunkyMeters" title="151017_151_TheFunkyMeters" id="8" onClick="javascript:closeIndex(8)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151017_170_TheFunkyMeters.jpg" alt="151017_170_TheFunkyMeters" title="151017_170_TheFunkyMeters" id="9" onClick="javascript:closeIndex(9)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_029_MrSipp.jpg" alt="151018_029_MrSipp" title="151018_029_MrSipp" id="10" onClick="javascript:closeIndex(10)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_046_JarekusSingleton.jpg" alt="151018_046_JarekusSingleton" title="151018_046_JarekusSingleton" id="11" onClick="javascript:closeIndex(11)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_068_ExcelloRecordsReunion.jpg" alt="151018_068_ExcelloRecordsReunion" title="151018_068_ExcelloRecordsReunion" id="12" onClick="javascript:closeIndex(12)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_080_ExcelloRecordsReunion.jpg" alt="151018_080_ExcelloRecordsReunion" title="151018_080_ExcelloRecordsReunion" id="13" onClick="javascript:closeIndex(13)" ><br>
+</div></td></tr>
+<tr><td>
+<div class="box">
+  <img src="thumbs/151018_081_ExcelloRecordsReunion.jpg" alt="151018_081_ExcelloRecordsReunion" title="151018_081_ExcelloRecordsReunion" id="14" onClick="javascript:closeIndex(14)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_084_ExcelloRecordsReunion.jpg" alt="151018_084_ExcelloRecordsReunion" title="151018_084_ExcelloRecordsReunion" id="15" onClick="javascript:closeIndex(15)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_101_ExcelloRecordsReunion.jpg" alt="151018_101_ExcelloRecordsReunion" title="151018_101_ExcelloRecordsReunion" id="16" onClick="javascript:closeIndex(16)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_122_DeniseLaSalle.jpg" alt="151018_122_DeniseLaSalle" title="151018_122_DeniseLaSalle" id="17" onClick="javascript:closeIndex(17)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_139_RuthieFoster.jpg" alt="151018_139_RuthieFoster" title="151018_139_RuthieFoster" id="18" onClick="javascript:closeIndex(18)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_146_RuthieFoster.jpg" alt="151018_146_RuthieFoster" title="151018_146_RuthieFoster" id="19" onClick="javascript:closeIndex(19)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_147_RuthieFoster.jpg" alt="151018_147_RuthieFoster" title="151018_147_RuthieFoster" id="20" onClick="javascript:closeIndex(20)" ><br>
+</div></td></tr>
+<tr><td>
+<div class="box">
+  <img src="thumbs/151018_151_RuthieFoster.jpg" alt="151018_151_RuthieFoster" title="151018_151_RuthieFoster" id="21" onClick="javascript:closeIndex(21)" ><br>
+</div></td>
+<td>
+<div class="box">
+  <img src="thumbs/151018_178_RuthieFoster.jpg" alt="151018_178_RuthieFoster" title="151018_178_RuthieFoster" id="22" onClick="javascript:closeIndex(22)" ><br>
+</div></td>
+<td> &nbsp;</td><td> &nbsp;</td><td> &nbsp;</td><td> &nbsp;</td><td> &nbsp;</td></tr>
+</table>
+
+
+
+  <div class="albumDescription">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+
+<div class="creditlink"><a href="http://jalbum.net" target="_blank">Gallery software for photographers</a></div>
+
+</div> <!-- swipeMe --> 
+   
+<div id="footer">
+  <div id="footer_left" >
+    <a href="http://jalbum.net" target="_blank">jAlbum</a> + <a href="http://jalbum.net/en/skins/skin/Slide%20Show%204" target="_blank">Slide Show 4</a>
+  </div>
+  <div id="footer_right" >
+    &nbsp;
+  </div>
+</div>
+
+</div> <!-- indexDiv -->
+  
+<div id="slideDiv">
+  <div  id="image">
+    <img id="slideimage" alt="" src="#"  onClick="javascript: playpause()"/>
+    <div class="caption" onClick="javascript:toggleScrollbox()"></div> 
+  </div>
+  <div id="movie"></div>
+
+
+<div id="slidemaplinks">
+  <div class="buttonDiv">
+  <a href="javascript:opencloseStrip()"><img src="res/openStrip.png" class="roundbutton" alt="More buttons" title="More buttons" id="opencloseStrip"></a>
+  </div>
+  
+  <div class="buttonDiv">
+  <a href="javascript:ProcLink()" id="info"><img src="res/info.png" class="roundbutton" alt="More Info" title="More Info"></a>
+  <button id="slideButton" onClick="javascript:ProcLink()">&nbsp;</button>
+  </div>
+
+  <div id="expandDiv" class="buttonDiv">
+  <a href="javascript:ExpandPanorama()" id="expand"><img src="res/expand.png" class="roundbutton"  alt="Expand panorama" title="Expand panorama"></a>
+  <a href="javascript:ExpandPanorama()" id="expandIn360Cities"><img src="res/360Cities.png" class="roundbutton" alt="View expanded panorama at 360Cities.net" title="View expanded panorama at 360Cities.net"></a>
+  </div>
+</div>
+
+<!-- Previous, play/pause and close buttons -->
+<div id="slidenavigation">
+<div class="buttonDiv">
+<!-- Previous button -->
+<a href="javascript:previous()"><img src="res/previous.png" class="roundbutton"  alt="Previous slide (left arrow key)" title="Previous slide (left arrow key)"></a>
+</div>
+<div class="buttonDiv">
+<!-- Play/paues button -->
+<a href="javascript:playpause()"><img src="res/pause.png" class="roundbutton" id="$playpause" alt="Play/Stop (space bar)" title="Play/Stop (space bar)"></a>
+</div>
+<div class="buttonDiv">
+<!-- Next button -->
+<a href="javascript:next()"><img src="res/next.png" class="roundbutton"  alt="Next slide (right arrow key)" title="Next slide (right arrow key)"></a>
+</div>
+<div class="buttonDiv">
+<!-- Close button -->
+<a href="javascript:closeSlide()"><img src="res/close.png" class="roundbutton"  alt="Close window and show index (up arrow key)" title="Close window and show index (up arrow key)"></a>
+</div>
+</div>
+
+<div id="slideStripDiv" onClick="javascript:testStripClick(event)">
+ <div class="container">
+   <div id="stripText"></div>
+ </div>
+<div class="stripbuttonDiv">
+<a href="javascript:OpenGoogleMaps()" id="gmaps"><img src="res/google-maps.png" class="roundbutton" alt="Google Maps" title="Google Maps"></a>
+</div>
+<div class="stripbuttonDiv">
+<a target="_blank" download=""  href="" id="downloadHiRes"><img src="res/downloadImg.png" class="roundbutton" id="downloadBtn" alt="Download hi-res or original image" title="Download hi-res or original image"></a>
+</div>
+ <div class="container">
+   <div id="stripExif"></div>
+ </div>
+</div>
+  <div id="topcomment" onClick="javascript:toggleScrollbox()"></div> 
+  <div id="bottomcomment" onClick="javascript:toggleScrollbox()"></div> 
+  <div id="bottomcomment_shadow" onClick="javascript:toggleScrollbox()"></div> 
+  <div id="commentbox" onClick="javascript:toggleScrollbox()"></div> 
+  
+  <img id="nextslideimage" alt="" src="#" />
+</div>
+
+  
+
+
+<script type="text/javascript">
+
+
+
+
+
+
+</script>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="res/jquery.js"><\/script>');</script>   
+<script src="res/jquery-ui.js"></script>
+<script src="res/jquery.touchSwipe.min.js"></script>
+<script src="res/slideshow.js"></script>
+<script src="slidePage.js"></script>
+
+<script>
+window.name = "SS4";
+play_img = new Image();
+play_img.src = "res/play.png";
+pause_img = new Image();
+pause_img.src = "res/pause.png";
+</script>
+</body>
+</html>
+
